@@ -10,14 +10,14 @@
 </head>
 <body>
 
-	<div style="margin-top: 50px; margin-left: 55px;">
+	<div style="margin-top: 50px; margin-left: 420px;">
 		<ul>
 
 			<li style="display: inline-block;">
 				<h2 style="color: dimgrey">调动的详细信息</h2>
 			</li>
 
-			<li style="display: inline-block; margin-left: 430px"><a
+			<li style="display: inline-block; margin-left: 300px"><a
 				style="background-color: dodgerblue;"
 				href="${pageContext.request.contextPath}/main">首&nbsp;&nbsp;页</a> <a
 				st style="background-color: dodgerblue;"
@@ -29,7 +29,7 @@
 
 
 		<table border="1px" cellpadding="0" ,ccellspacing="0"
-			style="margin-left:100px; margin-top: 20px;text-align: center;">
+			style="margin:auto; margin-top: 20px;text-align: center;">
 			<tr>
 				<td style="width: 100px;">id</td>
 				<td style="width: 120px;">员工名称</td>
@@ -63,11 +63,11 @@
 	<!--显示分页信息-->
 	<div class="row">
 		<!--文字信息-->
-		<div  style="text-align: right;margin-right: 700px;margin-top: 40px">当前第
+		<div  style="text-align: right;margin-right: 450px;margin-top: 40px">当前第
 			${pageInfo.pageNum} 页.总共 ${pageInfo.pages} 页.一共 ${pageInfo.total} 条记录</div>
 
 		<!--点击分页-->
-		<div class="col-md-6" style="text-align: right;margin-right: 700px;">
+		<div class="col-md-6" style="text-align: right;margin-right:450px;">
 			<nav aria-label="Page navigation" style="display: inline-block;">
 				<ul class="pagination">
 

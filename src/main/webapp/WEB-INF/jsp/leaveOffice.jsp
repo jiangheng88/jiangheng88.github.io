@@ -7,20 +7,28 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<style type="text/css">
+a {
+	text-decoration: none;
+	width: 40px;
+	height: 30px;
+	
+}
+</style>
 </head>
 <body>
-	<div style="margin-top: 50px; margin-left: 55px;">
+	<div style="margin-top: 50px; margin-left: 250px;">
 		<ul>
 
 			<li style="display: inline-block;">
 				<h2 style="color: dimgrey">离职的详细信息</h2>
 			</li>
 
-			<li style="display: inline-block; margin-left: 540px"><a
-				style="background-color: dodgerblue;"
+			<li style="display: inline-block; margin-left: 635px"><a
+				style="background-color: black;color:white"
 				href="${pageContext.request.contextPath}/main">首&nbsp;&nbsp;页</a> 
 				<a
-				st style="background-color: dodgerblue;"
+				style="background-color: black;color:white"
 				href="${pageContext.request.contextPath}/insertEnter">添&nbsp;加&nbsp;入&nbsp;职</a>
 			</li>
 		</ul>
@@ -29,7 +37,7 @@
 
 
 		<table border="1px" cellpadding="0" ,ccellspacing="0"
-			style="margin-left: 100px; margin-top: 20px; text-align: center;">
+			style="margin:auto; margin-top: 20px; text-align: center;">
 			<tr>
 				<td style="width: 100px;">id</td>
 				<td style="width: 100px;">员工姓名</td>
@@ -68,11 +76,11 @@
 	<!--显示分页信息-->
 	<div class="row">
 		<!--文字信息-->
-		<div style="text-align: right; margin-right: 590px; margin-top: 40px">当前第
+		<div style="text-align: right; margin-right: 290px; margin-top: 40px">当前第
 			${pageInfo.pageNum} 页.总共 ${pageInfo.pages} 页.一共 ${pageInfo.total} 条记录</div>
 
 		<!--点击分页-->
-		<div class="col-md-6" style="text-align: right; margin-right: 590px;">
+		<div class="col-md-6" style="text-align: right; margin-right: 290px;">
 			<nav aria-label="Page navigation" style="display: inline-block;">
 				<ul class="pagination">
 

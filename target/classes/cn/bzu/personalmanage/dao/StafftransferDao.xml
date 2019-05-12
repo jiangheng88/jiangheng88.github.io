@@ -22,8 +22,8 @@
 	<insert id="insert" useGeneratedKeys="true" keyProperty="id">
 		insert
 		into stafftransfer
-		(beforeid,afterid,staffName,date)
-		values(#{beforeid},#{afterid},#{staffName},#{date})
+		(afterid,staffName,date)
+		values(#{afterid},#{staffName},#{date})
 	</insert>
 
 

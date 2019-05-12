@@ -41,6 +41,14 @@ input[type="date"]::-webkit-datetime-edit-text {
 input[type="date"]::-webkit-clear-button {
 	display: none;
 }
+
+a {
+	text-decoration: none;
+	width: 40px;
+	height: 30px;
+	
+}
+
 </style>
 </head>
 <body>
@@ -79,7 +87,10 @@ input[type="date"]::-webkit-clear-button {
 
 				<tr>
 					<td class="td1">调动时间</td>
-					<td class="td2"><input type="date" name="date" /></td>
+					<td class="td2"><input type="date" name="date" />
+					<fmt:formatDate value="" pattern="yyyy-MM-dd"/>" />
+					
+					</td>
 				</tr>
 				<tr>
 					<td class="td1" colspan="2"><input

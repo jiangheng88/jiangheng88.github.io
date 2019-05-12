@@ -37,9 +37,9 @@ a {
 			</li>
 
 			<li style="display: inline-block; margin-left: 980px"><a
-				style="background-color: dodgerblue;"
+				style="background-color: black;color:white"
 				href="${pageContext.request.contextPath}/main">首&nbsp;&nbsp;页</a> <a
-				st style="background-color: dodgerblue;"
+				st style="background-color: black;color:white"
 				href="${pageContext.request.contextPath}/insert">添&nbsp;加&nbsp;员&nbsp;工</a>
 			</li>
 		</ul>

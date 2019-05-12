@@ -41,14 +41,12 @@ public class AdminController {
 
 	// 处理登录的方法
 	@RequestMapping(value = "/login")
-	public String index(Admin admin, Model model, @RequestParam(value = "checkCode") String code, HttpSession session) {
+	public String index(Admin admin, Model model,HttpSession session) {
 		Admin ad = adminService.login(admin.getAdminName(), admin.getAdminPass());
-		model.addAttribute("name", admin.getAdminName());
-		model.addAttribute("pass", admin.getAdminPass());
-		// 获得session中checkCode的值
-		String checkCode = (String) session.getAttribute("checkCode");
 		
-		if (ad != null && code.equals(checkCode)) {
+		
+		
+		if (ad != null ) {
 			model.addAttribute("admin",ad);
 			return "redirect:/main";
 		} else {
@@ -57,22 +55,17 @@ public class AdminController {
 		}
 	}
 
-	// 得到图片的方法
-	@RequestMapping("/images")
-	public void getimage(HttpServletRequest request, HttpServletResponse response, Model model) throws IOException {
-		response.setContentType("image.jpg");
-		int width = 100;
-		int height = 25;
-		CheckCodeSet cc = CheckCodeSet.getInstance();
-		cc.set(width, height);
-		// 得到随机分配的验证码
-		String checkcode = cc.generateCheckCode();
-		// 将验证码保存到session中
-		model.addAttribute("checkCode", checkcode);
-		// 输出流
-		OutputStream os = response.getOutputStream();
-		// 将验证码以图片的形式输出到浏览器上
-		ImageIO.write(cc.generateCheckImg(checkcode), "jpg", os);
-	}
+	/*
+	 * // 得到图片的方法
+	 * 
+	 * @RequestMapping("/images") public void getimage(HttpServletRequest request,
+	 * HttpServletResponse response, Model model) throws IOException {
+	 * response.setContentType("image.jpg"); int width = 100; int height = 25;
+	 * CheckCodeSet cc = CheckCodeSet.getInstance(); cc.set(width, height); //
+	 * 得到随机分配的验证码 String checkcode = cc.generateCheckCode(); // 将验证码保存到session中
+	 * model.addAttribute("checkCode", checkcode); // 输出流 OutputStream os =
+	 * response.getOutputStream(); // 将验证码以图片的形式输出到浏览器上
+	 * ImageIO.write(cc.generateCheckImg(checkcode), "jpg", os); }
+	 */
 
 }

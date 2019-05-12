@@ -5,78 +5,72 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>首页</title>
-<style>
-table {
-	width: 400px;
-	height: 280px;
-	margin: auto;
-	margin-top: 100px;
-}
-
-td {
-	text-align: center;
-	font-size: 22px;
-}
-
-.button {
-	width: 100px;
-	height: 30px;
-	background-color: black;
-	color: white;
-}
-
-.td1 {
-	width: 100px;
-}
-</style>
+<link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+   
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+    <!-- CSS Files -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/now-ui-kit.css?v=1.1.0" rel="stylesheet" />
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link href="assets/css/demo.css" rel="stylesheet" />
+    <!-- Canonical SEO -->
+    <link rel="canonical" href="" />
+    <!--  Social tags      -->
+    <meta name="keywords" content="">
+    <meta name="description" content="">
 </head>
 <body>
-
-		
-		
-		<c:if test="${not empty requestScope.note}">
-			<div style="text-align: center;">
-				<h4 style="color: red">${requestScope.note}</h4>
-			</div>
-		</c:if>
-
-		<div id="wrap">
-			<form action="${pageContext.request.contextPath}/login" method="post">
-				<table border="1" cellpadding="0" cellspacing="0">
-					<tr>
-						<td class="td1">用户名：</td>
-						<td><input
-							style="width: 200px; height: 25px; outline: none; cursor: pointer;"
-							type="text" name="adminName" /></td>
-					</tr>
-					<tr>
-						<td class="td1">密&nbsp;&nbsp;&nbsp;码：</td>
-						<td><input
-							style="width: 200px; height: 25px; outline: none; cursor: pointer;"
-							type="password" name="adminPass" /></td>
-					</tr>
-					<tr>
-						<td class="td1">验证码：</td>
-						<td><input
-							style="width: 100px; height: 20px; outline: none; cursor: pointer;"
-							type="text" name="checkCode" /> <img
-							src="${pageContext.request.contextPath}/images" /></td>
-					</tr>
-					<tr>
-						<td colspan="2"><input class="button"
-							style="border-style: none;" type="submit" value="登录"></td>
-					</tr>
-
-					<tr height="20px">
-						<td colspan="2" style="font-size: 10px;"><input
-							type="checkbox" value="rember" name="choose" />记住密码
-							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input
-							type="checkbox" value="auto" name="choose" />自动登录</td>
-					</tr>
-				</table>
-			</form>
-		</div>
-	
+<body class="login-page sidebar-collapse">
+   
+    <div class="page-header" filter-color="orange">
+        <div class="page-header-image" style="background-image:url(assets/img/login.jpg)"></div>
+        <div class="container">
+            <div class="col-md-4 content-center">
+                <div class="card card-login card-plain">
+                    <form class="form" method="post" action="${pageContext.request.contextPath}/login">
+                        <div class="header header-primary text-center">
+                            <div class="logo-container">
+                               
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="input-group form-group-no-border input-lg">
+                                <span class="input-group-addon">
+                                    <i class="now-ui-icons users_circle-08"></i>
+                                </span>
+                                <input type="text" class="form-control" placeholder="请输入用户名" name="adminName">
+                            </div>
+                            <div class="input-group form-group-no-border input-lg">
+                                <span class="input-group-addon">
+                                    <i class="now-ui-icons text_caps-small"></i>
+                                </span>
+                                <input type="password" placeholder="请输入密码" class="form-control" name="adminPass"/>
+                            </div>
+                        </div>
+                        <div class="footer text-center">
+                            <input class="btn btn-primary btn-round btn-lg btn-block" type="submit"  value="登录" >
+                        </div>
+                       
+                       
+                    </form>
+                </div>
+            </div>
+        </div>
+       
 </body>
+
+ <script src="assets/js/core/jquery.3.2.1.min.js" type="text/javascript"></script>
+<script src="assets/js/core/popper.min.js" type="text/javascript"></script>
+<script src="assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+<script src="assets/js/plugins/bootstrap-switch.js"></script>
+<script src="assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+<script src="assets/js/plugins/bootstrap-datepicker.js" type="text/javascript"></script>
+
+<script src="assets/js/plugins/jquery.sharrre.js" type="text/javascript"></script>
+<script src="assets/js/now-ui-kit.js?v=1.1.0" type="text/javascript"></script> 
 </html>

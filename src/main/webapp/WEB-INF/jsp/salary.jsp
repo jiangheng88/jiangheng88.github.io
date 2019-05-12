@@ -20,7 +20,7 @@ a {
 	text-decoration: none;
 	width: 40px;
 	height: 30px;
-	background-color:
+	
 }
 </style>
 </head>
@@ -37,9 +37,9 @@ a {
 			</li>
 
 			<li style="display: inline-block; margin-left: 290px"><a
-				style="background-color: dodgerblue;"
+				style="background-color: black;color:white"
 				href="${pageContext.request.contextPath}/main">首&nbsp;&nbsp;页</a> <a
-				st style="background-color: dodgerblue;"
+				 style="background-color: black;color:white"
 				href="${pageContext.request.contextPath}/salaryInsert">添&nbsp;加&nbsp;薪&nbsp;水</a>
 			</li>
 		</ul>
@@ -83,11 +83,11 @@ a {
 	<!--显示分页信息-->
 	<div class="row">
 		<!--文字信息-->
-		<div style="text-align: right; margin-right: 400px; margin-top: 40px">当前第
+		<div style="text-align: right; margin-right: 460px; margin-top: 40px">当前第
 			${pageInfo.pageNum} 页.总共 ${pageInfo.pages} 页.一共 ${pageInfo.total} 条记录</div>
 
 		<!--点击分页-->
-		<div class="col-md-6" style="text-align: right; margin-right: 400px;">
+		<div class="col-md-6" style="text-align: right; margin-right: 460px;">
 			<nav aria-label="Page navigation" style="display: inline-block;">
 				<ul class="pagination">
 

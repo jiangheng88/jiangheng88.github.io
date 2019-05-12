@@ -21,7 +21,7 @@ a {
 	text-decoration: none;
 	width: 40px;
 	height: 30px;
-	background-color:
+	
 }
 </style>
 </head>
@@ -36,9 +36,9 @@ a {
 			</li>
 
 			<li style="display: inline-block; margin-left: 370px"><a
-				style="background-color: dodgerblue;"
+				style="background-color: black;color:white"
 				href="${pageContext.request.contextPath}/main">首&nbsp;&nbsp;页</a> <a
-				st style="background-color: dodgerblue;"
+				style="background-color: black;color:white"
 				href="${pageContext.request.contextPath}/departmentInsert">添&nbsp;加&nbsp;部&nbsp;门</a>
 			</li>
 		</ul>
