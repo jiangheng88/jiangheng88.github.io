@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.bzu.personalmanage.dao.SalaryDao">
+	<select id="getOneSalary"
+
+		resultType="cn.bzu.personalmanage.entity.Salary">
+		select
+		id,attendance,baseSalary,bonus,allowance,sum from
+		salary where id = #{id}
+	</select>
+
+	<select id="getList"
+		resultType="cn.bzu.personalmanage.entity.Salary">
+		select
+		id,attendance,baseSalary,bonus,allowance,sum from
+		salary
+	</select>
+
+	<update id="update">
+		update salary set
+		attendance=#{attendance},baseSalary=#{baseSalary},
+		bonus=#{bonus},allowance=#{allowance},sum=#{sum}
+		where id = #{id}
+	</update>
+	<insert id="insert">
+		insert into salary
+		(attendance,baseSalary,bonus,allowance,sum)
+		values(#{attendance},#{baseSalary},#{bonus},#{allowance},#{sum})
+	</insert>
+	<delete id="del">
+		delete * from salary where id =#{id}
+	</delete>
+</mapper>

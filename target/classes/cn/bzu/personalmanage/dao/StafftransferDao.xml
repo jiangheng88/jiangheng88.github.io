@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.bzu.personalmanage.dao.StafftransferDao">
+	<select id="getOneStafftransfer"
+		resultType="cn.bzu.personalmanage.entity.StaffTransfer">
+		select id,staffId,beforeid,afterid,date from stafftransfer
+		where id =#{id}
+	</select>
+
+	<delete id="del">
+		delete from stafftransfer where id =#{id}
+	</delete>
+
+	<update id="update">
+		update stafftransfer set
+		beforeid=#{beforeid},afterid=#{afterid},date=#{date}
+		where id = #{id}
+	</update>
+
+	<insert id="insert" useGeneratedKeys="true" keyProperty="id">
+		insert
+		into stafftransfer
+		(beforeid,afterid,staffName,date)
+		values(#{beforeid},#{afterid},#{staffName},#{date})
+	</insert>
+
+
+	<select id="getList" resultMap="Staff-stafftranfer">
+		select
+		sf.id,sf.staffId,sf.beforeid,sf.afterid,sf.date,s.id
+		sid,s.name,s.age,s.sex,s.stationId,s.departmentId,
+		s.phone,s.education, s.prefession,s.salaryId,s.enterTimeId,p.id pid,p.stationName,p.maxNumber from
+		stafftransfer
+		sf,staff s,station p where sf.staffId=s.id and sf.afterid
+		= p.id
+
+	</select>
+
+	<resultMap type="cn.bzu.personalmanage.entity.StaffTransfer"
+		id="Staff-stafftranfer">
+
+		<id property="id" column="id" />
+		<result property="staffId" column="staffId" />
+		<result property="beforeid" column="beforeid" />
+		<result property="afterid" column="afterid" />
+		<result property="date" column="date" />
+		<association property="staff"
+			javaType="cn.bzu.personalmanage.entity.Staff">
+			<id column="sid" property="id" />
+			<result column="name" property="name" />
+			<result column="age" property="age" />
+			<result column="sex" property="sex" />
+			<result column="stationId" property="stationId" />
+			<result column="departmentId" property="departmentId" />
+			<result column="phone" property="phone" />
+
+			<result column="education" property="education" />
+			<result column="prefession" property="prefession" />
+			<result column="salaryId" property="salaryId" />
+			<result column="enterTimeId" property="enterTimeId" />
+
+		</association>
+		<!-- 关联岗位表 -->
+		<association property="position"
+			javaType="cn.bzu.personalmanage.entity.Station">
+			<id column="pid" property="id" />
+			<result column="stationName" property="stationName" />
+			<result column="maxNumber" property="maxNumber" />
+
+
+		</association>
+
+	</resultMap>
+</mapper>

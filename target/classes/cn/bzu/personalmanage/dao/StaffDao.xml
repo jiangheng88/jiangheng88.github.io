@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.bzu.personalmanage.dao.StaffDao">
+
+	<!--单条数据的关联查询 -->
+	<select id="getStaff" resultMap="staff_salary">
+		select * from
+		staff where id
+		=#{id}
+	</select>
+
+
+	<resultMap type="cn.bzu.personalmanage.entity.Staff"
+		id="staff_salary">
+		<id column="id" property="id" />
+		<result column="name" property="name" />
+		<result column="age" property="age" />
+		<result column="sex" property="sex" />
+		<result column="stationId" property="stationId" />
+		<result column="departmentId" property="departmentId" />
+		<result column="phone" property="phone" />
+		<result column="state" property="state" />
+		<result column="education" property="education" />
+		<result column="prefession" property="prefession" />
+		<result column="salaryId" property="salaryId" />
+		<result column="enterTimeId" property="enterTimeId" />
+		<!-- 关联薪水表 -->
+		<association property="salary"
+			select="cn.bzu.personalmanage.dao.SalaryDao.getOneSalary"
+			column="salaryId">
+		</association>
+		<!-- 关联部门表 -->
+		<association property="department"
+			select="cn.bzu.personalmanage.dao.DepartmentDao.getOneDepartment"
+			column="departmentId">
+		</association>
+		<!--关联岗位表 -->
+		<association property="station"
+			select="cn.bzu.personalmanage.dao.PositionDao.getOneStation"
+			column="stationId">
+		</association>
+
+		<!-- 关联入职表 -->
+		<association property="leaveOffice"
+			select="cn.bzu.personalmanage.dao.LeaveOfficeDao.getOneLeaveOffice"
+			column="enterTimeId">
+		</association>
+	</resultMap>
+
+	<!--删除 -->
+
+	<delete id="del">
+		delete from staff where id =#{id}
+	</delete>
+
+
+	<!--修改 -->
+	<update id="update">
+		UPDATE staff SET
+		name=#{name},age=#{age},sex=#{sex},stationId=#{stationId},departmentId=#{departmentId},phone=#{phone},education=#{education},prefession=#{prefession},salaryId=#{salaryId},enterTimeId=#{enterTimeId}
+		where id =#{id}
+	</update>
+
+	<!--添加 -->
+
+	<insert id="insert" useGeneratedKeys="true" keyProperty="id">
+		insert
+		into staff
+		(name,age,sex,stationId,departmentId,phone,education,prefession,salaryId,enterTimeId)
+		values(#{name},#{age},#{sex},#{stationId},#{departmentId},#{phone},
+		#{education},#{prefession},#{salaryId},#{enterTimeId})
+	</insert>
+
+
+
+
+	<!-- 多表的连接的模糊查询 -->
+<sql id="staff">
+	s.id,s.name,s.age,s.sex,s.age,s.stationId,s.departmentId,s.phone,s.state,s.education,s.prefession,s.salaryId,s.enterTimeId
+</sql>
+	<select id="getListByLike" resultMap="staff_salary_like">
+		select
+		*
+		from staff s
+		,salary y,department d,station p,leaveoffice l
+		where s.salaryId = y.id and
+		s.departmentId = d.id and s.stationId =
+		p.id and s.enterTimeId = l.id and 1=1
+		<if test="name!=null and name != &quot;&quot;">
+			and name like #{name}
+		</if>
+	</select>
+	
+
+	<resultMap type="cn.bzu.personalmanage.entity.Staff"
+		id="staff_salary_like">
+		<id column="id" property="id" />
+		<result column="name" property="name" />
+		<result column="age" property="age" />
+		<result column="sex" property="sex" />
+		<result column="stationId" property="stationId" />
+		<result column="departmentId" property="departmentId" />
+		<result column="phone" property="phone" />
+		<result column="state" property="state" />
+		<result column="education" property="education" />
+		<result column="prefession" property="prefession" />
+		<result column="salaryId" property="salaryId" />
+		<result column="enterTimeId" property="enterTimeId" />
+		<!-- 关联薪水表 -->
+		<association property="salary"
+			javaType="cn.bzu.personalmanage.entity.Salary">
+			<id column="id" property="id" />
+
+			<result column="attendance" property="attendance" />
+			<result column="baseSalary" property="baseSalary" />
+			<result column="bonus" property="bonus" />
+			<result column="allowance" property="allowance" />
+			<result column="sum" property="sum" />
+		</association>
+		<!-- 关联部门表 -->
+		<association property="department"
+			javaType="cn.bzu.personalmanage.entity.Department">
+			<id column="id" property="id" />
+
+			
+			<result column="dpname" property="dpname" />
+			<result column="dpmenber" property="dpmenber" />
+			<result column="date" property="date" />
+
+		</association>
+
+		<!-- 关联岗位表 -->
+		<association property="station"
+			javaType="cn.bzu.personalmanage.entity.Station">
+			<id column="id" property="id" />
+			
+			<result column="stationName" property="stationName" />
+			<result column="maxNumber" property="maxNumber" />
+
+		</association>
+		<!-- 关联入职表 -->
+		<association property="leaveOffice"
+			javaType="cn.bzu.personalmanage.entity.LeaveOffice">
+			<id column="id" property="id" />
+			<result column="enterdate" property="enterdate" />
+			<result column="reason" property="reason" />
+			<result column="leavedate" property="leavedate" />
+			<result column="state" property="state" />
+
+		</association>
+	</resultMap>
+
+	<!-- 多表的多条数据的关联查询 -->
+	<select id="getList" resultMap="staff-all">
+		select
+		*
+		from staff s
+		,salary
+		y,department d,station p,leaveoffice l where s.salaryId = y.id and
+		s.departmentId = d.id and s.stationId = p.id and s.enterTimeId = l.id
+	</select>
+
+	<resultMap type="cn.bzu.personalmanage.entity.Staff"
+		id="staff-all">
+		<id column="id" property="id" />
+		<result column="name" property="name" />
+		<result column="age" property="age" />
+		<result column="sex" property="sex" />
+		<result column="stationId" property="stationId" />
+		<result column="departmentId" property="departmentId" />
+		<result column="phone" property="phone" />
+		
+		<result column="education" property="education" />
+		<result column="prefession" property="prefession" />
+		<result column="salaryId" property="salaryId" />
+		<result column="enterTimeId" property="enterTimeId" />
+
+		<!-- 关联薪水表 -->
+		<association property="salary"
+			javaType="cn.bzu.personalmanage.entity.Salary">
+			<id column="id" property="id" />
+
+			<result column="attendance" property="attendance" />
+			<result column="baseSalary" property="baseSalary" />
+			<result column="bonus" property="bonus" />
+			<result column="allowance" property="allowance" />
+			<result column="sum" property="sum" />
+		</association>
+		<!-- 关联部门表 -->
+		<association property="department"
+			javaType="cn.bzu.personalmanage.entity.Department">
+			<id column="id" property="id" />
+
+			
+			<result column="dpname" property="dpname" />
+			<result column="dpmenber" property="dpmenber" />
+			<result column="date" property="date" />
+
+		</association>
+
+		<!-- 关联岗位表 -->
+		<association property="station"
+			javaType="cn.bzu.personalmanage.entity.Station">
+			<id column="id" property="id" />
+
+		
+			<result column="stationName" property="stationName" />
+			<result column="maxNumber" property="maxNumber" />
+
+
+		</association>
+		<!-- 关联入职表 -->
+		<association property="leaveOffice"
+			javaType="cn.bzu.personalmanage.entity.LeaveOffice">
+			<id column="id" property="id" />
+
+			
+			<result column="enterdate" property="enterdate" />
+			<result column="reason" property="reason" />
+			<result column="leavedate" property="leavedate" />
+			<result column="state" property="state" />
+
+		</association>
+
+	</resultMap>
+	
+	<select id="count" resultType="java.lang.Integer">
+		select count(*) from staff  
+	
+	</select>
+	<!-- 多表的多条数据的关联查询 -->
+	<select id="getOnJob" resultMap="staff-leave">
+		select
+		*
+		from staff s,
+		leaveoffice l where
+		 s.enterTimeId = l.id and l.state = "在职"
+	</select>
+
+	<resultMap type="cn.bzu.personalmanage.entity.Staff"
+		id="staff-leave">
+		<id column="id" property="id" />
+		<result column="name" property="name" />
+		<result column="age" property="age" />
+		<result column="sex" property="sex" />
+		<result column="stationId" property="stationId" />
+		<result column="departmentId" property="departmentId" />
+		<result column="phone" property="phone" />
+		
+		<result column="education" property="education" />
+		<result column="prefession" property="prefession" />
+		<result column="salaryId" property="salaryId" />
+		<result column="enterTimeId" property="enterTimeId" />
+
+		
+		<!-- 关联入职表 -->
+		<association property="leaveOffice"
+			javaType="cn.bzu.personalmanage.entity.LeaveOffice">
+			<id column="id" property="id" />
+
+			
+			<result column="enterdate" property="enterdate" />
+			<result column="reason" property="reason" />
+			<result column="leavedate" property="leavedate" />
+			<result column="state" property="state" />
+
+		</association>
+
+	</resultMap>
+	
+	
+	
+</mapper>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.bzu.personalmanage.dao.DepartmentDao">
+	<select id="getOneDepartment"
+		resultType="cn.bzu.personalmanage.entity.Department">
+		select id,dpname,dpmenber,date from department where id
+		=#{id}
+	</select>
+	<!--关联查询 单条信息-->
+	<select id="getDepartmentById" resultMap="department-staff">
+		select
+		d.id,d.dpname,d.dpmenber,d.date,s.id sid,s.name,s.age,s.sex,s.stationId,s.departmentId,
+		s.phone,s.education, s.prefession,s.salaryId,s.enterTimeId
+		from
+		department d,staff s where s.departmentId=d.id and d.id =#{id}
+	</select>
+
+	<resultMap type="cn.bzu.personalmanage.entity.Department"
+		id="department-staff">
+		<id column="id" property="id" />
+		<result column="dpname" property="dpname" />
+		<result column="dpmenber" property="dpmenber" />
+		<result column="date" property="date" />
+
+		<collection property="staffs"
+			ofType="cn.bzu.personalmanage.entity.Staff">
+			<id property="id" column="sid" />
+			<result column="name" property="name" />
+			<result column="age" property="age" />
+			<result column="sex" property="sex" />
+			<result column="stationId" property="stationId" />
+			<result column="departmentId" property="departmentId" />
+			<result column="phone" property="phone" />
+			<result column="state" property="state" />
+			<result column="education" property="education" />
+			<result column="prefession" property="prefession" />
+			<result column="salaryId" property="salaryId" />
+			<result column="enterTimeId" property="enterTimeId" />
+		</collection>
+	</resultMap>
+	<delete id="del">
+		delete from department where id =#{id}
+	</delete>
+
+	<update id="update">
+		update department set
+		dpname=#{dpname},dpmenber=#{dpmenber} where id = #{id}
+	</update>
+
+	<insert id="insert" useGeneratedKeys="true" keyProperty="id">
+		insert
+		into department
+		(dpname,dpmenber,date)
+		values(#{dpname},#{dpmenber},#{date})
+	</insert>
+
+	 <select id="getList"
+		resultType="cn.bzu.personalmanage.entity.Department">
+		select id,dpname,dpmenber,date from department
+	</select> 
+	
+	<!--关联查询 多条信息-->
+	<select id="getDepartments" resultMap="department-all">
+		select
+		d.id,d.dpname,d.dpmenber,d.date,s.id sid,s.name,s.age,s.sex,s.stationId,s.departmentId,
+		s.phone,s.education, s.prefession,s.salaryId,s.enterTimeId
+		from
+		department d,staff s where s.departmentId=d.id
+	</select>
+	<resultMap type="cn.bzu.personalmanage.entity.Department"
+		id="department-all">
+		<id column="id" property="id" />
+		<result column="dpname" property="dpname" />
+		<result column="dpmenber" property="dpmenber" />
+		<result column="date" property="date" />
+
+		<collection property="staffs"
+			ofType="cn.bzu.personalmanage.entity.Staff">
+			<id property="id" column="sid" />
+			<result column="name" property="name" />
+			<result column="age" property="age" />
+			<result column="sex" property="sex" />
+			<result column="stationId" property="stationId" />
+			<result column="departmentId" property="departmentId" />
+			<result column="phone" property="phone" />
+			<result column="state" property="state" />
+			<result column="education" property="education" />
+			<result column="prefession" property="prefession" />
+			<result column="salaryId" property="salaryId" />
+			<result column="enterTimeId" property="enterTimeId" />
+		</collection>
+	</resultMap>
+	
+	
+	
+</mapper>

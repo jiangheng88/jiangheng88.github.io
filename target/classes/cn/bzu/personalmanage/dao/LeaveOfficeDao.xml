@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.bzu.personalmanage.dao.LeaveOfficeDao">
+	<select id="getOneLeaveOffice" resultMap="onestaff-leave">
+		select
+		l.id
+		lid,l.enterdate,l.reason,l.leavedate,l.state,
+		s.id
+		sid,s.name,s.age,s.sex,s.stationId,s.departmentId,
+		s.phone,s.education, s.prefession,s.salaryId,s.enterTimeId from
+		leaveoffice l,
+		staff s where s.enterTimeId = l.id and l.id=#{id}
+
+	</select>
+	<resultMap type="cn.bzu.personalmanage.entity.LeaveOffice"
+		id="onestaff-leave">
+
+		<id column="lid" property="id" />
+		<result column="enterdate" property="enterdate" />
+		<result column="reason" property="reason" />
+		<result column="leavedate" property="leavedate" />
+		<result column="state" property="state" />
+
+		<association property="staff"
+			javaType="cn.bzu.personalmanage.entity.Staff">
+			<id column="sid" property="id" />
+			<result column="name" property="name" />
+			<result column="age" property="age" />
+			<result column="sex" property="sex" />
+			<result column="stationId" property="stationId" />
+			<result column="departmentId" property="departmentId" />
+			<result column="phone" property="phone" />
+
+			<result column="education" property="education" />
+			<result column="prefession" property="prefession" />
+			<result column="salaryId" property="salaryId" />
+			<result column="enterTimeId" property="enterTimeId" />
+
+		</association>
+
+
+	</resultMap>
+	<delete id="del">
+		delete from leaveoffice where id =#{id}
+	</delete>
+
+	<update id="update">
+		update leaveoffice set
+		enterdate=#{enterdate},reason=#{reason},leavedate=#{leavedate},state=#{state}
+		where
+		id = #{id}
+	</update>
+
+	<insert id="insertEnter" useGeneratedKeys="true"
+		keyProperty="id">
+		insert
+		into leaveoffice
+		(staffId,enterdate,state)
+		values(#{staffId},#{enterdate},#{state})
+	</insert>
+
+
+	<select id="getList" resultMap="staff-leave">
+		select
+		l.id
+		lid,l.enterdate,l.reason,l.leavedate,l.state,
+		s.id
+		sid,s.name,s.age,s.sex,s.stationId,s.departmentId,
+		s.phone,s.education, s.prefession,s.salaryId,s.enterTimeId from
+		leaveoffice l,
+		staff s where s.enterTimeId = l.id
+
+	</select>
+	<resultMap type="cn.bzu.personalmanage.entity.LeaveOffice"
+		id="staff-leave">
+		<id column="lid" property="id" />
+		<result column="enterdate" property="enterdate" />
+		<result column="reason" property="reason" />
+		<result column="leavedate" property="leavedate" />
+		<result column="state" property="state" />
+
+		<association property="staff"
+			javaType="cn.bzu.personalmanage.entity.Staff">
+			<id column="sid" property="id" />
+			<result column="name" property="name" />
+			<result column="age" property="age" />
+			<result column="sex" property="sex" />
+			<result column="stationId" property="stationId" />
+			<result column="departmentId" property="departmentId" />
+			<result column="phone" property="phone" />
+
+			<result column="education" property="education" />
+			<result column="prefession" property="prefession" />
+			<result column="salaryId" property="salaryId" />
+			<result column="enterTimeId" property="enterTimeId" />
+
+		</association>
+	</resultMap>
+	<select id="getTime"
+		resultType="cn.bzu.personalmanage.entity.LeaveOffice">
+		select * from leaveoffice
+
+	</select>
+
+</mapper>
