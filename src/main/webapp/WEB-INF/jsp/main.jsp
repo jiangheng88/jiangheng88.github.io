@@ -13,7 +13,7 @@
 	text-align: center;
 	line-height: 30px;
 	height: 30px;
-	width: 100px;
+	width: 150px;
 	font-size: 20px;
 }
 
