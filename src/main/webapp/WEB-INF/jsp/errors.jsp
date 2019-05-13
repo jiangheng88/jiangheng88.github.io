@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
-<body>
+<body style="background-image:url(assets/img/bg11.jpg)">
 你的操作的有误
 </body>
 </html>

@@ -25,7 +25,7 @@ a {
 }
 </style>
 </head>
-<body>
+<body style="background-image:url(assets/img/bg11.jpg)">
 <%-- ${sessionScope.pageInfo.list.staffs} --%>
 
 

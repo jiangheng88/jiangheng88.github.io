@@ -37,7 +37,7 @@ input {
 }
 </style>
 </head>
-<body>
+<body style="background-image:url(assets/img/bg11.jpg)">
 	<div style="text-align: center;">
 		<h1 style="text-align: center;">添&nbsp;&nbsp;加&nbsp;&nbsp;页&nbsp;&nbsp;面</h1>
 		<form action="${pageContext.request.contextPath}/doinsert">

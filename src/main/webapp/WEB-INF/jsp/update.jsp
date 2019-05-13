@@ -37,7 +37,7 @@ input {
 </style>
 </head>
 
-<body>
+<body style="background-image:url(assets/img/bg11.jpg)">
 
 	<div style="text-align: center;">
 		<h1 style="text-align: center;">修&nbsp;&nbsp;改&nbsp;&nbsp;页&nbsp;&nbsp;面</h1>

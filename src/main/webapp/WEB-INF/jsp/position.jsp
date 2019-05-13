@@ -17,7 +17,7 @@ a {
 }
 </style>
 </head>
-<body>
+<body style="background-image:url(assets/img/bg11.jpg)">
 	<div style="margin-top: 50px; margin-left: 480px;">
 		<ul>
 

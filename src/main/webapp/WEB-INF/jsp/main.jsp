@@ -29,9 +29,9 @@ a {
 </style>
 </head>
 
-<body>
+<body style="background-image:url(assets/img/bg11.jpg)">
 	<div style="text-align: center;">
-		<h1>员工管理主页面</h1>
+		<h1 style="font-style: ">员工管理主页面</h1>
 		<form action="${pageContext.request.contextPath}/doFuzzyQuery"
 			method="post">
 			<table border="1px" cellpadding="0" ,ccellspacing="0"

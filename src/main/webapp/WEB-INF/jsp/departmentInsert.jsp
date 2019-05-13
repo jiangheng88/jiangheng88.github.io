@@ -41,7 +41,7 @@ input[type="date"]::-webkit-clear-button {
 }
 </style>
 </head>
-<body>
+<body style="background-image:url(assets/img/bg11.jpg)">
 	<div style="text-align: center;">
 		<form action="${pageContext.request.contextPath}/dodepartmentInsert"
 			method="post">

@@ -25,7 +25,7 @@ a {
 </style>
 </head>
 
-<body>
+<body style="background-image:url(assets/img/bg11.jpg)">
 	<c:if test="${sessionScope.failed}" var="f">
 		<h4 style="text-align: center">${f}</h4>
 	</c:if>
