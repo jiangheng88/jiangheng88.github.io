@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body style="background-image:url(assets/img/bg11.jpg)">
-你的操作的有误
+你的操作有误，请返回从新操作
 </body>
 </html>
