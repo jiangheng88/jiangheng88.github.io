@@ -72,7 +72,7 @@ input {
 						name="stationId">
 							<option value="${requestScope.staff.station.id}">
 								选择你修改的岗位  ${requestScope.staff.station.id}</option>
-							<c:forEach items="${sessionScope.position}" var="position">
+							<c:forEach items="${requestScope.position}" var="position">
 								<option value="${position.id}">${position.id}&nbsp;&nbsp;${position.stationName}</option>
 							</c:forEach>
 					</select></td>
@@ -88,7 +88,7 @@ input {
 						name="departmentId">
 							<option value="${requestScope.staff.department.id}">
 								选择你修改的部门  ${requestScope.staff.department.id}</option>
-							<c:forEach items="${sessionScope.departments}" var="departments">
+							<c:forEach items="${requestScope.departments}" var="departments">
 								<option value="${departments.id}">${departments.id}&nbsp;&nbsp;${departments.dpname}</option>
 							</c:forEach>
 
@@ -117,7 +117,7 @@ input {
 						name="salaryId">
 							<option value="${requestScope.staff.salary.id}">
 								选择你修改的薪水  ${requestScope.staff.salary.id}</option>
-							<c:forEach items="${sessionScope.salary}" var="salary">
+							<c:forEach items="${requestScope.salary}" var="salary">
 								<option value="${salary.id}">${salary.id}&nbsp;&nbsp;${salary.sum}</option>
 							</c:forEach>
 

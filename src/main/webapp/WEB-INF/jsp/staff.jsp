@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -38,8 +38,11 @@ a {
 
 			<li style="display: inline-block; margin-left: 980px"><a
 				style="background-color: black;color:white"
-				href="${pageContext.request.contextPath}/main">首&nbsp;&nbsp;页</a> <a
-				st style="background-color: black;color:white"
+				href="${pageContext.request.contextPath}/main">首&nbsp;&nbsp;页</a>
+				<a style="background-color: black;color:white"
+				href="${pageContext.request.contextPath}/getname">根据名字查询</a> 
+				
+				<a style="background-color: black;color:white"
 				href="${pageContext.request.contextPath}/insert">添&nbsp;加&nbsp;员&nbsp;工</a>
 			</li>
 		</ul>

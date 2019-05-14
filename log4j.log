@@ -1,330 +1,631 @@
-2019-05-11 09:31:36,592 INFO Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@36f0f1be: startup date [Sat May 11 09:31:36 CST 2019]; root of context hierarchy
-2019-05-11 09:31:36,936 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\AdminController.class]
-2019-05-11 09:31:36,940 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\DepartmentController.class]
-2019-05-11 09:31:36,948 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\ExcelController.class]
-2019-05-11 09:31:36,950 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\LeaveOfficeController.class]
-2019-05-11 09:31:36,952 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\PositionController.class]
-2019-05-11 09:31:36,960 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\SalaryController.class]
-2019-05-11 09:31:36,968 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\StaffController.class]
-2019-05-11 09:31:36,973 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\StaffTransferController.class]
-2019-05-11 09:31:36,975 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\StatementController.class]
-2019-05-11 09:31:36,977 DEBUG Ignored because not a concrete top-level class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\AdminDao.class]
-2019-05-11 09:31:36,980 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\entity\Admin.class]
-2019-05-11 09:31:36,983 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\entity\Department.class]
-2019-05-11 09:31:36,989 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\entity\LeaveOffice.class]
-2019-05-11 09:31:36,994 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\entity\Staff.class]
-2019-05-11 09:31:36,995 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\entity\StaffTransfer.class]
-2019-05-11 09:31:36,996 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\entity\Station.class]
-2019-05-11 09:31:36,999 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\service\AdminServiceImpl.class]
-2019-05-11 09:31:37,001 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\service\DepartmentServiceImpl.class]
-2019-05-11 09:31:37,005 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\service\LeaveOfficeServiceImpl.class]
-2019-05-11 09:31:37,006 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\service\PositionServiceImpl.class]
-2019-05-11 09:31:37,007 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\service\SalaryServiceImpl.class]
-2019-05-11 09:31:37,009 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\service\StaffServiceImpl.class]
-2019-05-11 09:31:37,010 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\service\StafftransferServiceImpl.class]
-2019-05-11 09:31:37,012 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\utils\CheckCodeSet.class]
-2019-05-11 09:31:37,072 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\AdminDao.class]
-2019-05-11 09:31:37,073 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\DepartmentDao.class]
-2019-05-11 09:31:37,073 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\LeaveOfficeDao.class]
-2019-05-11 09:31:37,074 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\PositionDao.class]
-2019-05-11 09:31:37,074 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\SalaryDao.class]
-2019-05-11 09:31:37,074 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\StaffDao.class]
-2019-05-11 09:31:37,074 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\StafftransferDao.class]
-2019-05-11 09:31:37,075 DEBUG Creating MapperFactoryBean with name 'adminDao' and 'cn.bzu.personalmanage.dao.AdminDao' mapperInterface
-2019-05-11 09:31:37,076 DEBUG Enabling autowire by type for MapperFactoryBean with name 'adminDao'.
-2019-05-11 09:31:37,076 DEBUG Creating MapperFactoryBean with name 'departmentDao' and 'cn.bzu.personalmanage.dao.DepartmentDao' mapperInterface
-2019-05-11 09:31:37,076 DEBUG Enabling autowire by type for MapperFactoryBean with name 'departmentDao'.
-2019-05-11 09:31:37,077 DEBUG Creating MapperFactoryBean with name 'leaveOfficeDao' and 'cn.bzu.personalmanage.dao.LeaveOfficeDao' mapperInterface
-2019-05-11 09:31:37,077 DEBUG Enabling autowire by type for MapperFactoryBean with name 'leaveOfficeDao'.
-2019-05-11 09:31:37,077 DEBUG Creating MapperFactoryBean with name 'positionDao' and 'cn.bzu.personalmanage.dao.PositionDao' mapperInterface
-2019-05-11 09:31:37,077 DEBUG Enabling autowire by type for MapperFactoryBean with name 'positionDao'.
-2019-05-11 09:31:37,077 DEBUG Creating MapperFactoryBean with name 'salaryDao' and 'cn.bzu.personalmanage.dao.SalaryDao' mapperInterface
-2019-05-11 09:31:37,077 DEBUG Enabling autowire by type for MapperFactoryBean with name 'salaryDao'.
-2019-05-11 09:31:37,077 DEBUG Creating MapperFactoryBean with name 'staffDao' and 'cn.bzu.personalmanage.dao.StaffDao' mapperInterface
-2019-05-11 09:31:37,077 DEBUG Enabling autowire by type for MapperFactoryBean with name 'staffDao'.
-2019-05-11 09:31:37,077 DEBUG Creating MapperFactoryBean with name 'stafftransferDao' and 'cn.bzu.personalmanage.dao.StafftransferDao' mapperInterface
-2019-05-11 09:31:37,077 DEBUG Enabling autowire by type for MapperFactoryBean with name 'stafftransferDao'.
-2019-05-11 09:31:37,078 DEBUG Loaded 49 bean definitions from class path resource [applicationcontext.xml]
-2019-05-11 09:31:37,078 DEBUG Bean factory for org.springframework.context.support.ClassPathXmlApplicationContext@36f0f1be: org.springframework.beans.factory.support.DefaultListableBeanFactory@68567e20: defining beans [adminController,departmentController,excelController,leaveOfficeController,positionController,salaryController,staffController,staffTransferController,statementController,admin,department,leaveOffice,staff,staffTransfer,station,adminService,departmentService,leaveOfficeService,positionService,salaryService,staffService,stafftransferService,checkCodeSet,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,jdbcTemplate,dataSourceTransactionManager,org.springframework.transaction.config.internalTransactionalEventListenerFactory,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,txAdvice,txPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,sqlSessionFactory,adminDao,departmentDao,leaveOfficeDao,positionDao,salaryDao,staffDao,stafftransferDao]; root of factory hierarchy
-2019-05-11 09:31:37,136 DEBUG Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
-2019-05-11 09:31:37,295 DEBUG Creating shared instance of singleton bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
-2019-05-11 09:31:37,328 DEBUG Found key 'user' in PropertySource 'localProperties' with value of type String
-2019-05-11 09:31:37,328 DEBUG Found key 'password' in PropertySource 'localProperties' with value of type String
-2019-05-11 09:31:37,328 DEBUG Found key 'jdbcUrl' in PropertySource 'localProperties' with value of type String
-2019-05-11 09:31:37,328 DEBUG Found key 'driverClass' in PropertySource 'localProperties' with value of type String
-2019-05-11 09:31:37,334 DEBUG Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
-2019-05-11 09:31:37,342 DEBUG Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
-2019-05-11 09:31:37,344 DEBUG Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
-2019-05-11 09:31:37,356 DEBUG Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
-2019-05-11 09:31:37,380 DEBUG Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@431cd9b2]
-2019-05-11 09:31:37,384 DEBUG Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@68c9d179]
-2019-05-11 09:31:37,386 DEBUG Creating shared instance of singleton bean 'adminController'
-2019-05-11 09:31:37,387 DEBUG Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
-2019-05-11 09:31:37,393 DEBUG Creating shared instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
-2019-05-11 09:31:37,395 DEBUG Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
-2019-05-11 09:31:37,395 DEBUG Creating shared instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
-2019-05-11 09:31:37,422 DEBUG Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
-2019-05-11 09:31:37,422 DEBUG Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
-2019-05-11 09:31:37,528 DEBUG Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
-2019-05-11 09:31:37,539 DEBUG Creating shared instance of singleton bean 'adminService'
-2019-05-11 09:31:37,543 DEBUG Creating shared instance of singleton bean 'adminDao'
-2019-05-11 09:31:37,558 DEBUG Creating shared instance of singleton bean 'sqlSessionFactory'
-2019-05-11 09:31:37,565 DEBUG Creating shared instance of singleton bean 'dataSource'
-2019-05-11 09:31:37,591 INFO MLog clients using slf4j logging.
-2019-05-11 09:31:37,602 DEBUG Reading VM config for path list /com/mchange/v2/log/default-mchange-log.properties, /mchange-commons.properties, /c3p0.properties, hocon:/reference,/application,/c3p0,/, /mchange-log.properties, /
-2019-05-11 09:31:37,604 DEBUG The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
-2019-05-11 09:31:37,604 DEBUG The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
-2019-05-11 09:31:37,604 DEBUG The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
-2019-05-11 09:31:37,604 DEBUG The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
-2019-05-11 09:31:37,604 DEBUG The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
-2019-05-11 09:31:37,604 DEBUG The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
-2019-05-11 09:31:37,605 DEBUG The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
-2019-05-11 09:31:37,605 DEBUG The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
-2019-05-11 09:31:37,967 INFO Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
-2019-05-11 09:31:37,991 DEBUG MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hge77la219nbaz86m4j2r|ca30bc1,name=1hge77la219nbaz86m4j2r|ca30bc1 registered.
-2019-05-11 09:31:38,074 DEBUG MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hge77la219nbaz86m4j2r|ca30bc1,name=1hge77la219nbaz86m4j2r|ca30bc1 unregistered, in order to be reregistered after update.
-2019-05-11 09:31:38,075 DEBUG MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hge77la219nbaz86m4j2r|ca30bc1,name=1hge77la219nbaz86m4j2r|ca30bc1 registered.
-2019-05-11 09:31:38,320 DEBUG Parsed configuration file: 'class path resource [mybatis-config.xml]'
-2019-05-11 09:31:38,373 DEBUG Parsed mapper file: 'file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\AdminDao.xml]'
-2019-05-11 09:31:38,416 DEBUG Parsed mapper file: 'file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\DepartmentDao.xml]'
-2019-05-11 09:31:38,464 DEBUG Parsed mapper file: 'file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\LeaveOfficeDao.xml]'
-2019-05-11 09:31:38,504 DEBUG Parsed mapper file: 'file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\PositionDao.xml]'
-2019-05-11 09:31:38,515 DEBUG Parsed mapper file: 'file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\SalaryDao.xml]'
-2019-05-11 09:31:38,546 DEBUG Parsed mapper file: 'file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\StaffDao.xml]'
-2019-05-11 09:31:38,577 DEBUG Parsed mapper file: 'file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\StafftransferDao.xml]'
-2019-05-11 09:31:38,611 DEBUG Creating shared instance of singleton bean 'txAdvice'
-2019-05-11 09:31:38,630 DEBUG Creating shared instance of singleton bean 'dataSourceTransactionManager'
-2019-05-11 09:31:38,661 DEBUG Adding transactional method [get*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly]
-2019-05-11 09:31:38,661 DEBUG Adding transactional method [load*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly]
-2019-05-11 09:31:38,661 DEBUG Adding transactional method [find*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly]
-2019-05-11 09:31:38,661 DEBUG Adding transactional method [select*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly]
-2019-05-11 09:31:38,661 DEBUG Adding transactional method [*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT]
-2019-05-11 09:31:38,672 DEBUG Creating implicit proxy for bean 'adminService' with 0 common interceptors and 2 specific interceptors
-2019-05-11 09:31:38,674 DEBUG Creating JDK dynamic proxy: target source is SingletonTargetSource for target object [cn.bzu.personalmanage.service.AdminServiceImpl@62ea3440]
-2019-05-11 09:31:38,681 DEBUG Creating shared instance of singleton bean 'departmentController'
-2019-05-11 09:31:38,685 DEBUG Creating shared instance of singleton bean 'departmentService'
-2019-05-11 09:31:38,691 DEBUG Creating shared instance of singleton bean 'departmentDao'
-2019-05-11 09:31:38,700 DEBUG Creating implicit proxy for bean 'departmentService' with 0 common interceptors and 2 specific interceptors
-2019-05-11 09:31:38,700 DEBUG Creating JDK dynamic proxy: target source is SingletonTargetSource for target object [cn.bzu.personalmanage.service.DepartmentServiceImpl@13e3c1c7]
-2019-05-11 09:31:38,707 DEBUG Creating shared instance of singleton bean 'excelController'
-2019-05-11 09:31:38,712 DEBUG Creating shared instance of singleton bean 'staffDao'
-2019-05-11 09:31:38,723 DEBUG Creating shared instance of singleton bean 'leaveOfficeController'
-2019-05-11 09:31:38,728 DEBUG Creating shared instance of singleton bean 'leaveOfficeService'
-2019-05-11 09:31:38,733 DEBUG Creating shared instance of singleton bean 'leaveOfficeDao'
-2019-05-11 09:31:38,738 DEBUG Creating implicit proxy for bean 'leaveOfficeService' with 0 common interceptors and 2 specific interceptors
-2019-05-11 09:31:38,738 DEBUG Creating JDK dynamic proxy: target source is SingletonTargetSource for target object [cn.bzu.personalmanage.service.LeaveOfficeServiceImpl@285c08c8]
-2019-05-11 09:31:38,744 DEBUG Creating shared instance of singleton bean 'staffController'
-2019-05-11 09:31:38,748 DEBUG Creating shared instance of singleton bean 'staffService'
-2019-05-11 09:31:38,751 DEBUG Creating implicit proxy for bean 'staffService' with 0 common interceptors and 2 specific interceptors
-2019-05-11 09:31:38,752 DEBUG Creating JDK dynamic proxy: target source is SingletonTargetSource for target object [cn.bzu.personalmanage.service.StaffServiceImpl@47605f2f]
-2019-05-11 09:31:38,757 DEBUG Creating shared instance of singleton bean 'positionController'
-2019-05-11 09:31:38,762 DEBUG Creating shared instance of singleton bean 'positionService'
-2019-05-11 09:31:38,767 DEBUG Creating shared instance of singleton bean 'positionDao'
-2019-05-11 09:31:38,780 DEBUG Creating implicit proxy for bean 'positionService' with 0 common interceptors and 2 specific interceptors
-2019-05-11 09:31:38,783 DEBUG Creating JDK dynamic proxy: target source is SingletonTargetSource for target object [cn.bzu.personalmanage.service.PositionServiceImpl@60f7cc1d]
-2019-05-11 09:31:38,788 DEBUG Creating shared instance of singleton bean 'salaryController'
-2019-05-11 09:31:38,795 DEBUG Creating shared instance of singleton bean 'salaryService'
-2019-05-11 09:31:38,803 DEBUG Creating shared instance of singleton bean 'salaryDao'
-2019-05-11 09:31:38,808 DEBUG Creating implicit proxy for bean 'salaryService' with 0 common interceptors and 2 specific interceptors
-2019-05-11 09:31:38,809 DEBUG Creating JDK dynamic proxy: target source is SingletonTargetSource for target object [cn.bzu.personalmanage.service.SalaryServiceImpl@62dae540]
-2019-05-11 09:31:38,823 DEBUG Creating shared instance of singleton bean 'staffTransferController'
-2019-05-11 09:31:38,828 DEBUG Creating shared instance of singleton bean 'stafftransferService'
-2019-05-11 09:31:38,838 DEBUG Creating shared instance of singleton bean 'stafftransferDao'
-2019-05-11 09:31:38,841 DEBUG Creating implicit proxy for bean 'stafftransferService' with 0 common interceptors and 2 specific interceptors
-2019-05-11 09:31:38,841 DEBUG Creating JDK dynamic proxy: target source is SingletonTargetSource for target object [cn.bzu.personalmanage.service.StafftransferServiceImpl@14f5da2c]
-2019-05-11 09:31:38,846 DEBUG Creating shared instance of singleton bean 'statementController'
-2019-05-11 09:31:38,850 DEBUG Creating shared instance of singleton bean 'admin'
-2019-05-11 09:31:38,853 DEBUG Creating shared instance of singleton bean 'department'
-2019-05-11 09:31:38,857 DEBUG Creating shared instance of singleton bean 'leaveOffice'
-2019-05-11 09:31:38,860 DEBUG Creating shared instance of singleton bean 'staff'
-2019-05-11 09:31:38,871 DEBUG Creating shared instance of singleton bean 'staffTransfer'
-2019-05-11 09:31:38,874 DEBUG Creating shared instance of singleton bean 'station'
-2019-05-11 09:31:38,883 DEBUG Creating shared instance of singleton bean 'checkCodeSet'
-2019-05-11 09:31:38,886 DEBUG Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
-2019-05-11 09:31:38,900 DEBUG Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
-2019-05-11 09:31:38,905 DEBUG Creating shared instance of singleton bean 'jdbcTemplate'
-2019-05-11 09:31:38,976 DEBUG Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
-2019-05-11 09:31:38,979 DEBUG Creating shared instance of singleton bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
-2019-05-11 09:31:39,003 DEBUG Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@162be91c]
-2019-05-11 09:31:39,023 DEBUG Creating a new SqlSession
-2019-05-11 09:31:39,041 DEBUG SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7fcbe147] was not registered for synchronization because synchronization is not active
-2019-05-11 09:31:39,050 DEBUG Fetching JDBC Connection from DataSource
-2019-05-11 09:31:39,088 INFO Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge77la219nbaz86m4j2r|ca30bc1, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge77la219nbaz86m4j2r|ca30bc1, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/management?Unicode=true&characterEncoding=UTF-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
-2019-05-11 09:31:39,105 DEBUG The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
-2019-05-11 09:31:39,105 DEBUG The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
-2019-05-11 09:31:39,105 DEBUG The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
-2019-05-11 09:31:39,105 DEBUG The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
-2019-05-11 09:31:39,107 DEBUG com.mchange.v2.resourcepool.BasicResourcePool@2cf23c81 config: [start -> 3; min -> 3; max -> 15; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 0; max_resource_age -> 0; max_idle_time -> 0; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 0; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false; force_synchronous_checkins -> false]
-2019-05-11 09:31:39,109 DEBUG Created new pool for auth, username (masked): 'ro******'.
-2019-05-11 09:31:39,110 DEBUG acquire test -- pool size: 0; target_pool_size: 3; desired target? 1
-2019-05-11 09:31:39,112 DEBUG awaitAvailable(): [unknown]
-2019-05-11 09:31:39,376 DEBUG JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@34645867 [wrapping: com.mysql.jdbc.JDBC4Connection@2484f433]] will not be managed by Spring
-2019-05-11 09:31:39,382 DEBUG ==>  Preparing: select * from staff s, leaveoffice l where s.enterTimeId = l.id and l.state = "ÔÚÖ°" 
-2019-05-11 09:31:39,411 DEBUG ==> Parameters: 
-2019-05-11 09:31:39,470 DEBUG <==      Total: 5
-2019-05-11 09:31:39,493 DEBUG Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7fcbe147]
-2019-05-11 09:54:09,460 INFO Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@36f0f1be: startup date [Sat May 11 09:54:09 CST 2019]; root of context hierarchy
-2019-05-11 09:54:09,754 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\AdminController.class]
-2019-05-11 09:54:09,756 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\DepartmentController.class]
-2019-05-11 09:54:09,764 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\ExcelController.class]
-2019-05-11 09:54:09,766 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\LeaveOfficeController.class]
-2019-05-11 09:54:09,768 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\PositionController.class]
-2019-05-11 09:54:09,770 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\SalaryController.class]
-2019-05-11 09:54:09,777 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\StaffController.class]
-2019-05-11 09:54:09,779 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\StaffTransferController.class]
-2019-05-11 09:54:09,782 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\StatementController.class]
-2019-05-11 09:54:09,785 DEBUG Ignored because not a concrete top-level class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\AdminDao.class]
-2019-05-11 09:54:09,787 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\entity\Admin.class]
-2019-05-11 09:54:09,788 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\entity\Department.class]
-2019-05-11 09:54:09,789 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\entity\LeaveOffice.class]
-2019-05-11 09:54:09,792 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\entity\Staff.class]
-2019-05-11 09:54:09,795 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\entity\StaffTransfer.class]
-2019-05-11 09:54:09,796 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\entity\Station.class]
-2019-05-11 09:54:09,797 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\service\AdminServiceImpl.class]
-2019-05-11 09:54:09,799 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\service\DepartmentServiceImpl.class]
-2019-05-11 09:54:09,800 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\service\LeaveOfficeServiceImpl.class]
-2019-05-11 09:54:09,801 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\service\PositionServiceImpl.class]
-2019-05-11 09:54:09,802 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\service\SalaryServiceImpl.class]
-2019-05-11 09:54:09,803 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\service\StaffServiceImpl.class]
-2019-05-11 09:54:09,807 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\service\StafftransferServiceImpl.class]
-2019-05-11 09:54:09,810 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\utils\CheckCodeSet.class]
-2019-05-11 09:54:09,854 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\AdminDao.class]
-2019-05-11 09:54:09,854 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\DepartmentDao.class]
-2019-05-11 09:54:09,855 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\LeaveOfficeDao.class]
-2019-05-11 09:54:09,855 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\PositionDao.class]
-2019-05-11 09:54:09,855 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\SalaryDao.class]
-2019-05-11 09:54:09,855 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\StaffDao.class]
-2019-05-11 09:54:09,855 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\StafftransferDao.class]
-2019-05-11 09:54:09,856 DEBUG Creating MapperFactoryBean with name 'adminDao' and 'cn.bzu.personalmanage.dao.AdminDao' mapperInterface
-2019-05-11 09:54:09,857 DEBUG Enabling autowire by type for MapperFactoryBean with name 'adminDao'.
-2019-05-11 09:54:09,858 DEBUG Creating MapperFactoryBean with name 'departmentDao' and 'cn.bzu.personalmanage.dao.DepartmentDao' mapperInterface
-2019-05-11 09:54:09,858 DEBUG Enabling autowire by type for MapperFactoryBean with name 'departmentDao'.
-2019-05-11 09:54:09,858 DEBUG Creating MapperFactoryBean with name 'leaveOfficeDao' and 'cn.bzu.personalmanage.dao.LeaveOfficeDao' mapperInterface
-2019-05-11 09:54:09,858 DEBUG Enabling autowire by type for MapperFactoryBean with name 'leaveOfficeDao'.
-2019-05-11 09:54:09,858 DEBUG Creating MapperFactoryBean with name 'positionDao' and 'cn.bzu.personalmanage.dao.PositionDao' mapperInterface
-2019-05-11 09:54:09,858 DEBUG Enabling autowire by type for MapperFactoryBean with name 'positionDao'.
-2019-05-11 09:54:09,858 DEBUG Creating MapperFactoryBean with name 'salaryDao' and 'cn.bzu.personalmanage.dao.SalaryDao' mapperInterface
-2019-05-11 09:54:09,858 DEBUG Enabling autowire by type for MapperFactoryBean with name 'salaryDao'.
-2019-05-11 09:54:09,858 DEBUG Creating MapperFactoryBean with name 'staffDao' and 'cn.bzu.personalmanage.dao.StaffDao' mapperInterface
-2019-05-11 09:54:09,858 DEBUG Enabling autowire by type for MapperFactoryBean with name 'staffDao'.
-2019-05-11 09:54:09,858 DEBUG Creating MapperFactoryBean with name 'stafftransferDao' and 'cn.bzu.personalmanage.dao.StafftransferDao' mapperInterface
-2019-05-11 09:54:09,859 DEBUG Enabling autowire by type for MapperFactoryBean with name 'stafftransferDao'.
-2019-05-11 09:54:09,859 DEBUG Loaded 49 bean definitions from class path resource [applicationcontext.xml]
-2019-05-11 09:54:09,859 DEBUG Bean factory for org.springframework.context.support.ClassPathXmlApplicationContext@36f0f1be: org.springframework.beans.factory.support.DefaultListableBeanFactory@68567e20: defining beans [adminController,departmentController,excelController,leaveOfficeController,positionController,salaryController,staffController,staffTransferController,statementController,admin,department,leaveOffice,staff,staffTransfer,station,adminService,departmentService,leaveOfficeService,positionService,salaryService,staffService,stafftransferService,checkCodeSet,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,jdbcTemplate,dataSourceTransactionManager,org.springframework.transaction.config.internalTransactionalEventListenerFactory,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,txAdvice,txPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,sqlSessionFactory,adminDao,departmentDao,leaveOfficeDao,positionDao,salaryDao,staffDao,stafftransferDao]; root of factory hierarchy
-2019-05-11 09:54:09,909 DEBUG Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
-2019-05-11 09:54:10,041 DEBUG Creating shared instance of singleton bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
-2019-05-11 09:54:10,077 DEBUG Found key 'user' in PropertySource 'localProperties' with value of type String
-2019-05-11 09:54:10,077 DEBUG Found key 'password' in PropertySource 'localProperties' with value of type String
-2019-05-11 09:54:10,077 DEBUG Found key 'jdbcUrl' in PropertySource 'localProperties' with value of type String
-2019-05-11 09:54:10,077 DEBUG Found key 'driverClass' in PropertySource 'localProperties' with value of type String
-2019-05-11 09:54:10,081 DEBUG Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
-2019-05-11 09:54:10,093 DEBUG Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
-2019-05-11 09:54:10,098 DEBUG Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
-2019-05-11 09:54:10,106 DEBUG Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
-2019-05-11 09:54:10,131 DEBUG Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@431cd9b2]
-2019-05-11 09:54:10,134 DEBUG Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@68c9d179]
-2019-05-11 09:54:10,136 DEBUG Creating shared instance of singleton bean 'adminController'
-2019-05-11 09:54:10,138 DEBUG Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
-2019-05-11 09:54:10,149 DEBUG Creating shared instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
-2019-05-11 09:54:10,149 DEBUG Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
-2019-05-11 09:54:10,150 DEBUG Creating shared instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
-2019-05-11 09:54:10,172 DEBUG Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
-2019-05-11 09:54:10,173 DEBUG Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
-2019-05-11 09:54:10,278 DEBUG Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
-2019-05-11 09:54:10,288 DEBUG Creating shared instance of singleton bean 'adminService'
-2019-05-11 09:54:10,291 DEBUG Creating shared instance of singleton bean 'adminDao'
-2019-05-11 09:54:10,305 DEBUG Creating shared instance of singleton bean 'sqlSessionFactory'
-2019-05-11 09:54:10,314 DEBUG Creating shared instance of singleton bean 'dataSource'
-2019-05-11 09:54:10,338 INFO MLog clients using slf4j logging.
-2019-05-11 09:54:10,343 DEBUG Reading VM config for path list /com/mchange/v2/log/default-mchange-log.properties, /mchange-commons.properties, /c3p0.properties, hocon:/reference,/application,/c3p0,/, /mchange-log.properties, /
-2019-05-11 09:54:10,343 DEBUG The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
-2019-05-11 09:54:10,343 DEBUG The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
-2019-05-11 09:54:10,343 DEBUG The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
-2019-05-11 09:54:10,343 DEBUG The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
-2019-05-11 09:54:10,346 DEBUG The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
-2019-05-11 09:54:10,346 DEBUG The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
-2019-05-11 09:54:10,347 DEBUG The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
-2019-05-11 09:54:10,348 DEBUG The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
-2019-05-11 09:54:10,667 INFO Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
-2019-05-11 09:54:10,687 DEBUG MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hge77la219o4ar8yxtzyk|ca30bc1,name=1hge77la219o4ar8yxtzyk|ca30bc1 registered.
-2019-05-11 09:54:10,743 DEBUG MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hge77la219o4ar8yxtzyk|ca30bc1,name=1hge77la219o4ar8yxtzyk|ca30bc1 unregistered, in order to be reregistered after update.
-2019-05-11 09:54:10,743 DEBUG MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hge77la219o4ar8yxtzyk|ca30bc1,name=1hge77la219o4ar8yxtzyk|ca30bc1 registered.
-2019-05-11 09:54:10,963 DEBUG Parsed configuration file: 'class path resource [mybatis-config.xml]'
-2019-05-11 09:54:11,015 DEBUG Parsed mapper file: 'file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\AdminDao.xml]'
-2019-05-11 09:54:11,055 DEBUG Parsed mapper file: 'file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\DepartmentDao.xml]'
-2019-05-11 09:54:11,075 DEBUG Parsed mapper file: 'file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\LeaveOfficeDao.xml]'
-2019-05-11 09:54:11,089 DEBUG Parsed mapper file: 'file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\PositionDao.xml]'
-2019-05-11 09:54:11,102 DEBUG Parsed mapper file: 'file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\SalaryDao.xml]'
-2019-05-11 09:54:11,132 DEBUG Parsed mapper file: 'file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\StaffDao.xml]'
-2019-05-11 09:54:11,154 DEBUG Parsed mapper file: 'file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\StafftransferDao.xml]'
-2019-05-11 09:54:11,208 DEBUG Creating shared instance of singleton bean 'txAdvice'
-2019-05-11 09:54:11,218 DEBUG Creating shared instance of singleton bean 'dataSourceTransactionManager'
-2019-05-11 09:54:11,254 DEBUG Adding transactional method [get*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly]
-2019-05-11 09:54:11,255 DEBUG Adding transactional method [load*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly]
-2019-05-11 09:54:11,256 DEBUG Adding transactional method [find*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly]
-2019-05-11 09:54:11,256 DEBUG Adding transactional method [select*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly]
-2019-05-11 09:54:11,256 DEBUG Adding transactional method [*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT]
-2019-05-11 09:54:11,272 DEBUG Creating implicit proxy for bean 'adminService' with 0 common interceptors and 2 specific interceptors
-2019-05-11 09:54:11,275 DEBUG Creating JDK dynamic proxy: target source is SingletonTargetSource for target object [cn.bzu.personalmanage.service.AdminServiceImpl@62ea3440]
-2019-05-11 09:54:11,282 DEBUG Creating shared instance of singleton bean 'departmentController'
-2019-05-11 09:54:11,288 DEBUG Creating shared instance of singleton bean 'departmentService'
-2019-05-11 09:54:11,293 DEBUG Creating shared instance of singleton bean 'departmentDao'
-2019-05-11 09:54:11,300 DEBUG Creating implicit proxy for bean 'departmentService' with 0 common interceptors and 2 specific interceptors
-2019-05-11 09:54:11,302 DEBUG Creating JDK dynamic proxy: target source is SingletonTargetSource for target object [cn.bzu.personalmanage.service.DepartmentServiceImpl@13e3c1c7]
-2019-05-11 09:54:11,306 DEBUG Creating shared instance of singleton bean 'excelController'
-2019-05-11 09:54:11,311 DEBUG Creating shared instance of singleton bean 'staffDao'
-2019-05-11 09:54:11,325 DEBUG Creating shared instance of singleton bean 'leaveOfficeController'
-2019-05-11 09:54:11,335 DEBUG Creating shared instance of singleton bean 'leaveOfficeService'
-2019-05-11 09:54:11,342 DEBUG Creating shared instance of singleton bean 'leaveOfficeDao'
-2019-05-11 09:54:11,350 DEBUG Creating implicit proxy for bean 'leaveOfficeService' with 0 common interceptors and 2 specific interceptors
-2019-05-11 09:54:11,350 DEBUG Creating JDK dynamic proxy: target source is SingletonTargetSource for target object [cn.bzu.personalmanage.service.LeaveOfficeServiceImpl@285c08c8]
-2019-05-11 09:54:11,354 DEBUG Creating shared instance of singleton bean 'staffController'
-2019-05-11 09:54:11,368 DEBUG Creating shared instance of singleton bean 'staffService'
-2019-05-11 09:54:11,393 DEBUG Creating implicit proxy for bean 'staffService' with 0 common interceptors and 2 specific interceptors
-2019-05-11 09:54:11,395 DEBUG Creating JDK dynamic proxy: target source is SingletonTargetSource for target object [cn.bzu.personalmanage.service.StaffServiceImpl@47605f2f]
-2019-05-11 09:54:11,398 DEBUG Creating shared instance of singleton bean 'positionController'
-2019-05-11 09:54:11,403 DEBUG Creating shared instance of singleton bean 'positionService'
-2019-05-11 09:54:11,412 DEBUG Creating shared instance of singleton bean 'positionDao'
-2019-05-11 09:54:11,416 DEBUG Creating implicit proxy for bean 'positionService' with 0 common interceptors and 2 specific interceptors
-2019-05-11 09:54:11,417 DEBUG Creating JDK dynamic proxy: target source is SingletonTargetSource for target object [cn.bzu.personalmanage.service.PositionServiceImpl@60f7cc1d]
-2019-05-11 09:54:11,423 DEBUG Creating shared instance of singleton bean 'salaryController'
-2019-05-11 09:54:11,427 DEBUG Creating shared instance of singleton bean 'salaryService'
-2019-05-11 09:54:11,436 DEBUG Creating shared instance of singleton bean 'salaryDao'
-2019-05-11 09:54:11,449 DEBUG Creating implicit proxy for bean 'salaryService' with 0 common interceptors and 2 specific interceptors
-2019-05-11 09:54:11,451 DEBUG Creating JDK dynamic proxy: target source is SingletonTargetSource for target object [cn.bzu.personalmanage.service.SalaryServiceImpl@62dae540]
-2019-05-11 09:54:11,461 DEBUG Creating shared instance of singleton bean 'staffTransferController'
-2019-05-11 09:54:11,465 DEBUG Creating shared instance of singleton bean 'stafftransferService'
-2019-05-11 09:54:11,470 DEBUG Creating shared instance of singleton bean 'stafftransferDao'
-2019-05-11 09:54:11,479 DEBUG Creating implicit proxy for bean 'stafftransferService' with 0 common interceptors and 2 specific interceptors
-2019-05-11 09:54:11,481 DEBUG Creating JDK dynamic proxy: target source is SingletonTargetSource for target object [cn.bzu.personalmanage.service.StafftransferServiceImpl@14f5da2c]
-2019-05-11 09:54:11,485 DEBUG Creating shared instance of singleton bean 'statementController'
-2019-05-11 09:54:11,493 DEBUG Creating shared instance of singleton bean 'admin'
-2019-05-11 09:54:11,497 DEBUG Creating shared instance of singleton bean 'department'
-2019-05-11 09:54:11,510 DEBUG Creating shared instance of singleton bean 'leaveOffice'
-2019-05-11 09:54:11,515 DEBUG Creating shared instance of singleton bean 'staff'
-2019-05-11 09:54:11,526 DEBUG Creating shared instance of singleton bean 'staffTransfer'
-2019-05-11 09:54:11,529 DEBUG Creating shared instance of singleton bean 'station'
-2019-05-11 09:54:11,533 DEBUG Creating shared instance of singleton bean 'checkCodeSet'
-2019-05-11 09:54:11,541 DEBUG Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
-2019-05-11 09:54:11,552 DEBUG Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
-2019-05-11 09:54:11,576 DEBUG Creating shared instance of singleton bean 'jdbcTemplate'
-2019-05-11 09:54:11,652 DEBUG Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
-2019-05-11 09:54:11,656 DEBUG Creating shared instance of singleton bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
-2019-05-11 09:54:11,705 DEBUG Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@162be91c]
-2019-05-11 09:54:11,735 DEBUG Creating a new SqlSession
-2019-05-11 09:54:11,758 DEBUG SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7fcbe147] was not registered for synchronization because synchronization is not active
-2019-05-11 09:54:11,775 DEBUG Fetching JDBC Connection from DataSource
-2019-05-11 09:54:11,823 INFO Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge77la219o4ar8yxtzyk|ca30bc1, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge77la219o4ar8yxtzyk|ca30bc1, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/management?Unicode=true&characterEncoding=UTF-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
-2019-05-11 09:54:11,843 DEBUG The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
-2019-05-11 09:54:11,843 DEBUG The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
-2019-05-11 09:54:11,843 DEBUG The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
-2019-05-11 09:54:11,843 DEBUG The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
-2019-05-11 09:54:11,850 DEBUG com.mchange.v2.resourcepool.BasicResourcePool@2cf23c81 config: [start -> 3; min -> 3; max -> 15; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 0; max_resource_age -> 0; max_idle_time -> 0; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 0; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false; force_synchronous_checkins -> false]
-2019-05-11 09:54:11,855 DEBUG Created new pool for auth, username (masked): 'ro******'.
-2019-05-11 09:54:11,858 DEBUG acquire test -- pool size: 0; target_pool_size: 3; desired target? 1
-2019-05-11 09:54:11,859 DEBUG awaitAvailable(): [unknown]
-2019-05-11 09:54:12,176 DEBUG JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@34645867 [wrapping: com.mysql.jdbc.JDBC4Connection@2484f433]] will not be managed by Spring
-2019-05-11 09:54:12,182 DEBUG ==>  Preparing: select * from leaveoffice 
-2019-05-11 09:54:12,215 DEBUG ==> Parameters: 
-2019-05-11 09:54:12,241 DEBUG <==      Total: 16
-2019-05-11 09:54:12,248 DEBUG Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7fcbe147]
+2019-05-14 15:21:19,082 INFO Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@36f0f1be: startup date [Tue May 14 15:21:19 CST 2019]; root of context hierarchy
+2019-05-14 15:21:19,440 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\AdminController.class]
+2019-05-14 15:21:19,443 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\DepartmentController.class]
+2019-05-14 15:21:19,451 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\ExcelController.class]
+2019-05-14 15:21:19,455 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\LeaveOfficeController.class]
+2019-05-14 15:21:19,458 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\PositionController.class]
+2019-05-14 15:21:19,461 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\SalaryController.class]
+2019-05-14 15:21:19,463 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\StaffController.class]
+2019-05-14 15:21:19,465 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\StaffTransferController.class]
+2019-05-14 15:21:19,466 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\StatementController.class]
+2019-05-14 15:21:19,468 DEBUG Ignored because not a concrete top-level class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\AdminDao.class]
+2019-05-14 15:21:19,470 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\entity\Admin.class]
+2019-05-14 15:21:19,470 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\entity\Department.class]
+2019-05-14 15:21:19,471 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\entity\LeaveOffice.class]
+2019-05-14 15:21:19,472 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\entity\Staff.class]
+2019-05-14 15:21:19,474 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\entity\StaffTransfer.class]
+2019-05-14 15:21:19,475 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\entity\Station.class]
+2019-05-14 15:21:19,476 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\service\AdminServiceImpl.class]
+2019-05-14 15:21:19,478 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\service\DepartmentServiceImpl.class]
+2019-05-14 15:21:19,482 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\service\LeaveOfficeServiceImpl.class]
+2019-05-14 15:21:19,483 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\service\PositionServiceImpl.class]
+2019-05-14 15:21:19,484 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\service\SalaryServiceImpl.class]
+2019-05-14 15:21:19,485 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\service\StaffServiceImpl.class]
+2019-05-14 15:21:19,487 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\service\StafftransferServiceImpl.class]
+2019-05-14 15:21:19,488 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\utils\CheckCodeSet.class]
+2019-05-14 15:21:19,595 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\AdminDao.class]
+2019-05-14 15:21:19,595 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\DepartmentDao.class]
+2019-05-14 15:21:19,596 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\LeaveOfficeDao.class]
+2019-05-14 15:21:19,596 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\PositionDao.class]
+2019-05-14 15:21:19,596 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\SalaryDao.class]
+2019-05-14 15:21:19,596 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\StaffDao.class]
+2019-05-14 15:21:19,596 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\StafftransferDao.class]
+2019-05-14 15:21:19,597 DEBUG Creating MapperFactoryBean with name 'adminDao' and 'cn.bzu.personalmanage.dao.AdminDao' mapperInterface
+2019-05-14 15:21:19,599 DEBUG Enabling autowire by type for MapperFactoryBean with name 'adminDao'.
+2019-05-14 15:21:19,599 DEBUG Creating MapperFactoryBean with name 'departmentDao' and 'cn.bzu.personalmanage.dao.DepartmentDao' mapperInterface
+2019-05-14 15:21:19,599 DEBUG Enabling autowire by type for MapperFactoryBean with name 'departmentDao'.
+2019-05-14 15:21:19,599 DEBUG Creating MapperFactoryBean with name 'leaveOfficeDao' and 'cn.bzu.personalmanage.dao.LeaveOfficeDao' mapperInterface
+2019-05-14 15:21:19,599 DEBUG Enabling autowire by type for MapperFactoryBean with name 'leaveOfficeDao'.
+2019-05-14 15:21:19,600 DEBUG Creating MapperFactoryBean with name 'positionDao' and 'cn.bzu.personalmanage.dao.PositionDao' mapperInterface
+2019-05-14 15:21:19,600 DEBUG Enabling autowire by type for MapperFactoryBean with name 'positionDao'.
+2019-05-14 15:21:19,600 DEBUG Creating MapperFactoryBean with name 'salaryDao' and 'cn.bzu.personalmanage.dao.SalaryDao' mapperInterface
+2019-05-14 15:21:19,601 DEBUG Enabling autowire by type for MapperFactoryBean with name 'salaryDao'.
+2019-05-14 15:21:19,601 DEBUG Creating MapperFactoryBean with name 'staffDao' and 'cn.bzu.personalmanage.dao.StaffDao' mapperInterface
+2019-05-14 15:21:19,601 DEBUG Enabling autowire by type for MapperFactoryBean with name 'staffDao'.
+2019-05-14 15:21:19,601 DEBUG Creating MapperFactoryBean with name 'stafftransferDao' and 'cn.bzu.personalmanage.dao.StafftransferDao' mapperInterface
+2019-05-14 15:21:19,601 DEBUG Enabling autowire by type for MapperFactoryBean with name 'stafftransferDao'.
+2019-05-14 15:21:19,601 DEBUG Loaded 49 bean definitions from class path resource [applicationcontext.xml]
+2019-05-14 15:21:19,602 DEBUG Bean factory for org.springframework.context.support.ClassPathXmlApplicationContext@36f0f1be: org.springframework.beans.factory.support.DefaultListableBeanFactory@68567e20: defining beans [adminController,departmentController,excelController,leaveOfficeController,positionController,salaryController,staffController,staffTransferController,statementController,admin,department,leaveOffice,staff,staffTransfer,station,adminService,departmentService,leaveOfficeService,positionService,salaryService,staffService,stafftransferService,checkCodeSet,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,jdbcTemplate,dataSourceTransactionManager,org.springframework.transaction.config.internalTransactionalEventListenerFactory,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,txAdvice,txPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,sqlSessionFactory,adminDao,departmentDao,leaveOfficeDao,positionDao,salaryDao,staffDao,stafftransferDao]; root of factory hierarchy
+2019-05-14 15:21:19,676 DEBUG Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2019-05-14 15:21:19,868 DEBUG Creating shared instance of singleton bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+2019-05-14 15:21:19,937 DEBUG Found key 'user' in PropertySource 'localProperties' with value of type String
+2019-05-14 15:21:19,940 DEBUG Found key 'password' in PropertySource 'localProperties' with value of type String
+2019-05-14 15:21:19,941 DEBUG Found key 'jdbcUrl' in PropertySource 'localProperties' with value of type String
+2019-05-14 15:21:19,943 DEBUG Found key 'driverClass' in PropertySource 'localProperties' with value of type String
+2019-05-14 15:21:19,949 DEBUG Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2019-05-14 15:21:19,968 DEBUG Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2019-05-14 15:21:19,971 DEBUG Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2019-05-14 15:21:19,994 DEBUG Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2019-05-14 15:21:20,031 DEBUG Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@431cd9b2]
+2019-05-14 15:21:20,033 DEBUG Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@68c9d179]
+2019-05-14 15:21:20,036 DEBUG Creating shared instance of singleton bean 'adminController'
+2019-05-14 15:21:20,038 DEBUG Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-14 15:21:20,064 DEBUG Creating shared instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+2019-05-14 15:21:20,065 DEBUG Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-14 15:21:20,066 DEBUG Creating shared instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+2019-05-14 15:21:20,133 DEBUG Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-14 15:21:20,133 DEBUG Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-14 15:21:20,356 DEBUG Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-05-14 15:21:20,369 DEBUG Creating shared instance of singleton bean 'adminService'
+2019-05-14 15:21:20,372 DEBUG Creating shared instance of singleton bean 'adminDao'
+2019-05-14 15:21:20,386 DEBUG Creating shared instance of singleton bean 'sqlSessionFactory'
+2019-05-14 15:21:20,398 DEBUG Creating shared instance of singleton bean 'dataSource'
+2019-05-14 15:21:20,465 INFO MLog clients using slf4j logging.
+2019-05-14 15:21:20,472 DEBUG Reading VM config for path list /com/mchange/v2/log/default-mchange-log.properties, /mchange-commons.properties, /c3p0.properties, hocon:/reference,/application,/c3p0,/, /mchange-log.properties, /
+2019-05-14 15:21:20,472 DEBUG The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2019-05-14 15:21:20,472 DEBUG The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2019-05-14 15:21:20,472 DEBUG The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2019-05-14 15:21:20,472 DEBUG The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2019-05-14 15:21:20,475 DEBUG The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2019-05-14 15:21:20,475 DEBUG The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2019-05-14 15:21:20,476 DEBUG The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2019-05-14 15:21:20,476 DEBUG The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2019-05-14 15:21:20,837 INFO Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2019-05-14 15:21:20,858 DEBUG MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hge77la21ea4lghhmqca3|74589991,name=1hge77la21ea4lghhmqca3|74589991 registered.
+2019-05-14 15:21:21,000 DEBUG MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hge77la21ea4lghhmqca3|74589991,name=1hge77la21ea4lghhmqca3|74589991 unregistered, in order to be reregistered after update.
+2019-05-14 15:21:21,000 DEBUG MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hge77la21ea4lghhmqca3|74589991,name=1hge77la21ea4lghhmqca3|74589991 registered.
+2019-05-14 15:21:21,301 DEBUG Parsed configuration file: 'class path resource [mybatis-config.xml]'
+2019-05-14 15:21:21,380 DEBUG Parsed mapper file: 'file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\AdminDao.xml]'
+2019-05-14 15:21:21,414 DEBUG Parsed mapper file: 'file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\DepartmentDao.xml]'
+2019-05-14 15:21:21,440 DEBUG Parsed mapper file: 'file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\LeaveOfficeDao.xml]'
+2019-05-14 15:21:21,463 DEBUG Parsed mapper file: 'file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\PositionDao.xml]'
+2019-05-14 15:21:21,479 DEBUG Parsed mapper file: 'file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\SalaryDao.xml]'
+2019-05-14 15:21:21,519 WARN Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminController': Unsatisfied dependency expressed through field 'adminService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminService': Unsatisfied dependency expressed through field 'adminDao'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminDao' defined in file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\AdminDao.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [applicationcontext.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\StaffDao.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\StaffDao.xml]'. Cause: java.lang.IllegalArgumentException: Result Maps collection already contains value for cn.bzu.personalmanage.dao.StaffDao.mapper_resultMap[staff-leave]_association[leaveOffice]
+2019-05-14 15:25:45,081 INFO Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@36f0f1be: startup date [Tue May 14 15:25:45 CST 2019]; root of context hierarchy
+2019-05-14 15:25:45,354 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\AdminController.class]
+2019-05-14 15:25:45,356 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\DepartmentController.class]
+2019-05-14 15:25:45,363 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\ExcelController.class]
+2019-05-14 15:25:45,366 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\LeaveOfficeController.class]
+2019-05-14 15:25:45,369 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\PositionController.class]
+2019-05-14 15:25:45,371 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\SalaryController.class]
+2019-05-14 15:25:45,376 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\StaffController.class]
+2019-05-14 15:25:45,377 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\StaffTransferController.class]
+2019-05-14 15:25:45,379 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\StatementController.class]
+2019-05-14 15:25:45,380 DEBUG Ignored because not a concrete top-level class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\AdminDao.class]
+2019-05-14 15:25:45,384 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\entity\Admin.class]
+2019-05-14 15:25:45,385 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\entity\Department.class]
+2019-05-14 15:25:45,386 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\entity\LeaveOffice.class]
+2019-05-14 15:25:45,389 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\entity\Staff.class]
+2019-05-14 15:25:45,392 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\entity\StaffTransfer.class]
+2019-05-14 15:25:45,393 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\entity\Station.class]
+2019-05-14 15:25:45,395 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\service\AdminServiceImpl.class]
+2019-05-14 15:25:45,396 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\service\DepartmentServiceImpl.class]
+2019-05-14 15:25:45,399 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\service\LeaveOfficeServiceImpl.class]
+2019-05-14 15:25:45,402 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\service\PositionServiceImpl.class]
+2019-05-14 15:25:45,403 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\service\SalaryServiceImpl.class]
+2019-05-14 15:25:45,405 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\service\StaffServiceImpl.class]
+2019-05-14 15:25:45,406 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\service\StafftransferServiceImpl.class]
+2019-05-14 15:25:45,409 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\utils\CheckCodeSet.class]
+2019-05-14 15:25:45,454 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\AdminDao.class]
+2019-05-14 15:25:45,455 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\DepartmentDao.class]
+2019-05-14 15:25:45,455 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\LeaveOfficeDao.class]
+2019-05-14 15:25:45,455 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\PositionDao.class]
+2019-05-14 15:25:45,455 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\SalaryDao.class]
+2019-05-14 15:25:45,457 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\StaffDao.class]
+2019-05-14 15:25:45,466 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\StafftransferDao.class]
+2019-05-14 15:25:45,467 DEBUG Creating MapperFactoryBean with name 'adminDao' and 'cn.bzu.personalmanage.dao.AdminDao' mapperInterface
+2019-05-14 15:25:45,469 DEBUG Enabling autowire by type for MapperFactoryBean with name 'adminDao'.
+2019-05-14 15:25:45,469 DEBUG Creating MapperFactoryBean with name 'departmentDao' and 'cn.bzu.personalmanage.dao.DepartmentDao' mapperInterface
+2019-05-14 15:25:45,469 DEBUG Enabling autowire by type for MapperFactoryBean with name 'departmentDao'.
+2019-05-14 15:25:45,469 DEBUG Creating MapperFactoryBean with name 'leaveOfficeDao' and 'cn.bzu.personalmanage.dao.LeaveOfficeDao' mapperInterface
+2019-05-14 15:25:45,470 DEBUG Enabling autowire by type for MapperFactoryBean with name 'leaveOfficeDao'.
+2019-05-14 15:25:45,470 DEBUG Creating MapperFactoryBean with name 'positionDao' and 'cn.bzu.personalmanage.dao.PositionDao' mapperInterface
+2019-05-14 15:25:45,470 DEBUG Enabling autowire by type for MapperFactoryBean with name 'positionDao'.
+2019-05-14 15:25:45,470 DEBUG Creating MapperFactoryBean with name 'salaryDao' and 'cn.bzu.personalmanage.dao.SalaryDao' mapperInterface
+2019-05-14 15:25:45,470 DEBUG Enabling autowire by type for MapperFactoryBean with name 'salaryDao'.
+2019-05-14 15:25:45,470 DEBUG Creating MapperFactoryBean with name 'staffDao' and 'cn.bzu.personalmanage.dao.StaffDao' mapperInterface
+2019-05-14 15:25:45,471 DEBUG Enabling autowire by type for MapperFactoryBean with name 'staffDao'.
+2019-05-14 15:25:45,472 DEBUG Creating MapperFactoryBean with name 'stafftransferDao' and 'cn.bzu.personalmanage.dao.StafftransferDao' mapperInterface
+2019-05-14 15:25:45,472 DEBUG Enabling autowire by type for MapperFactoryBean with name 'stafftransferDao'.
+2019-05-14 15:25:45,472 DEBUG Loaded 49 bean definitions from class path resource [applicationcontext.xml]
+2019-05-14 15:25:45,472 DEBUG Bean factory for org.springframework.context.support.ClassPathXmlApplicationContext@36f0f1be: org.springframework.beans.factory.support.DefaultListableBeanFactory@68567e20: defining beans [adminController,departmentController,excelController,leaveOfficeController,positionController,salaryController,staffController,staffTransferController,statementController,admin,department,leaveOffice,staff,staffTransfer,station,adminService,departmentService,leaveOfficeService,positionService,salaryService,staffService,stafftransferService,checkCodeSet,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,jdbcTemplate,dataSourceTransactionManager,org.springframework.transaction.config.internalTransactionalEventListenerFactory,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,txAdvice,txPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,sqlSessionFactory,adminDao,departmentDao,leaveOfficeDao,positionDao,salaryDao,staffDao,stafftransferDao]; root of factory hierarchy
+2019-05-14 15:25:45,526 DEBUG Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2019-05-14 15:25:45,651 DEBUG Creating shared instance of singleton bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+2019-05-14 15:25:45,698 DEBUG Found key 'user' in PropertySource 'localProperties' with value of type String
+2019-05-14 15:25:45,698 DEBUG Found key 'password' in PropertySource 'localProperties' with value of type String
+2019-05-14 15:25:45,699 DEBUG Found key 'jdbcUrl' in PropertySource 'localProperties' with value of type String
+2019-05-14 15:25:45,699 DEBUG Found key 'driverClass' in PropertySource 'localProperties' with value of type String
+2019-05-14 15:25:45,705 DEBUG Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2019-05-14 15:25:45,717 DEBUG Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2019-05-14 15:25:45,720 DEBUG Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2019-05-14 15:25:45,730 DEBUG Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2019-05-14 15:25:45,755 DEBUG Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@431cd9b2]
+2019-05-14 15:25:45,759 DEBUG Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@68c9d179]
+2019-05-14 15:25:45,762 DEBUG Creating shared instance of singleton bean 'adminController'
+2019-05-14 15:25:45,766 DEBUG Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-14 15:25:45,774 DEBUG Creating shared instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+2019-05-14 15:25:45,777 DEBUG Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-14 15:25:45,780 DEBUG Creating shared instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+2019-05-14 15:25:45,802 DEBUG Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-14 15:25:45,802 DEBUG Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-14 15:25:45,915 DEBUG Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-05-14 15:25:45,927 DEBUG Creating shared instance of singleton bean 'adminService'
+2019-05-14 15:25:45,933 DEBUG Creating shared instance of singleton bean 'adminDao'
+2019-05-14 15:25:45,949 DEBUG Creating shared instance of singleton bean 'sqlSessionFactory'
+2019-05-14 15:25:45,958 DEBUG Creating shared instance of singleton bean 'dataSource'
+2019-05-14 15:25:45,983 INFO MLog clients using slf4j logging.
+2019-05-14 15:25:45,987 DEBUG Reading VM config for path list /com/mchange/v2/log/default-mchange-log.properties, /mchange-commons.properties, /c3p0.properties, hocon:/reference,/application,/c3p0,/, /mchange-log.properties, /
+2019-05-14 15:25:45,987 DEBUG The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2019-05-14 15:25:45,987 DEBUG The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2019-05-14 15:25:45,987 DEBUG The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2019-05-14 15:25:45,987 DEBUG The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2019-05-14 15:25:45,989 DEBUG The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2019-05-14 15:25:45,989 DEBUG The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2019-05-14 15:25:45,989 DEBUG The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2019-05-14 15:25:45,989 DEBUG The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2019-05-14 15:25:46,338 INFO Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2019-05-14 15:25:46,359 DEBUG MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hge77la21eaaac21gmuyix|74589991,name=1hge77la21eaaac21gmuyix|74589991 registered.
+2019-05-14 15:25:46,411 DEBUG MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hge77la21eaaac21gmuyix|74589991,name=1hge77la21eaaac21gmuyix|74589991 unregistered, in order to be reregistered after update.
+2019-05-14 15:25:46,411 DEBUG MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hge77la21eaaac21gmuyix|74589991,name=1hge77la21eaaac21gmuyix|74589991 registered.
+2019-05-14 15:25:46,661 DEBUG Parsed configuration file: 'class path resource [mybatis-config.xml]'
+2019-05-14 15:25:46,736 DEBUG Parsed mapper file: 'file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\AdminDao.xml]'
+2019-05-14 15:25:46,764 DEBUG Parsed mapper file: 'file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\DepartmentDao.xml]'
+2019-05-14 15:25:46,786 DEBUG Parsed mapper file: 'file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\LeaveOfficeDao.xml]'
+2019-05-14 15:25:46,800 DEBUG Parsed mapper file: 'file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\PositionDao.xml]'
+2019-05-14 15:25:46,812 DEBUG Parsed mapper file: 'file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\SalaryDao.xml]'
+2019-05-14 15:25:46,837 WARN Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminController': Unsatisfied dependency expressed through field 'adminService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminService': Unsatisfied dependency expressed through field 'adminDao'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminDao' defined in file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\AdminDao.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [applicationcontext.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\StaffDao.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\StaffDao.xml]'. Cause: java.lang.IllegalArgumentException: Result Maps collection already contains value for cn.bzu.personalmanage.dao.StaffDao.mapper_resultMap[staff-leave]_association[leaveOffice]
+2019-05-14 15:27:30,766 INFO Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@36f0f1be: startup date [Tue May 14 15:27:30 CST 2019]; root of context hierarchy
+2019-05-14 15:27:31,023 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\AdminController.class]
+2019-05-14 15:27:31,026 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\DepartmentController.class]
+2019-05-14 15:27:31,031 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\ExcelController.class]
+2019-05-14 15:27:31,034 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\LeaveOfficeController.class]
+2019-05-14 15:27:31,036 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\PositionController.class]
+2019-05-14 15:27:31,041 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\SalaryController.class]
+2019-05-14 15:27:31,046 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\StaffController.class]
+2019-05-14 15:27:31,048 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\StaffTransferController.class]
+2019-05-14 15:27:31,048 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\StatementController.class]
+2019-05-14 15:27:31,051 DEBUG Ignored because not a concrete top-level class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\AdminDao.class]
+2019-05-14 15:27:31,054 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\entity\Admin.class]
+2019-05-14 15:27:31,055 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\entity\Department.class]
+2019-05-14 15:27:31,056 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\entity\LeaveOffice.class]
+2019-05-14 15:27:31,061 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\entity\Staff.class]
+2019-05-14 15:27:31,063 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\entity\StaffTransfer.class]
+2019-05-14 15:27:31,064 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\entity\Station.class]
+2019-05-14 15:27:31,066 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\service\AdminServiceImpl.class]
+2019-05-14 15:27:31,067 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\service\DepartmentServiceImpl.class]
+2019-05-14 15:27:31,069 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\service\LeaveOfficeServiceImpl.class]
+2019-05-14 15:27:31,071 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\service\PositionServiceImpl.class]
+2019-05-14 15:27:31,072 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\service\SalaryServiceImpl.class]
+2019-05-14 15:27:31,073 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\service\StaffServiceImpl.class]
+2019-05-14 15:27:31,073 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\service\StafftransferServiceImpl.class]
+2019-05-14 15:27:31,075 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\utils\CheckCodeSet.class]
+2019-05-14 15:27:31,123 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\AdminDao.class]
+2019-05-14 15:27:31,123 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\DepartmentDao.class]
+2019-05-14 15:27:31,123 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\LeaveOfficeDao.class]
+2019-05-14 15:27:31,123 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\PositionDao.class]
+2019-05-14 15:27:31,123 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\SalaryDao.class]
+2019-05-14 15:27:31,124 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\StaffDao.class]
+2019-05-14 15:27:31,124 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\StafftransferDao.class]
+2019-05-14 15:27:31,124 DEBUG Creating MapperFactoryBean with name 'adminDao' and 'cn.bzu.personalmanage.dao.AdminDao' mapperInterface
+2019-05-14 15:27:31,126 DEBUG Enabling autowire by type for MapperFactoryBean with name 'adminDao'.
+2019-05-14 15:27:31,126 DEBUG Creating MapperFactoryBean with name 'departmentDao' and 'cn.bzu.personalmanage.dao.DepartmentDao' mapperInterface
+2019-05-14 15:27:31,126 DEBUG Enabling autowire by type for MapperFactoryBean with name 'departmentDao'.
+2019-05-14 15:27:31,126 DEBUG Creating MapperFactoryBean with name 'leaveOfficeDao' and 'cn.bzu.personalmanage.dao.LeaveOfficeDao' mapperInterface
+2019-05-14 15:27:31,126 DEBUG Enabling autowire by type for MapperFactoryBean with name 'leaveOfficeDao'.
+2019-05-14 15:27:31,126 DEBUG Creating MapperFactoryBean with name 'positionDao' and 'cn.bzu.personalmanage.dao.PositionDao' mapperInterface
+2019-05-14 15:27:31,127 DEBUG Enabling autowire by type for MapperFactoryBean with name 'positionDao'.
+2019-05-14 15:27:31,127 DEBUG Creating MapperFactoryBean with name 'salaryDao' and 'cn.bzu.personalmanage.dao.SalaryDao' mapperInterface
+2019-05-14 15:27:31,127 DEBUG Enabling autowire by type for MapperFactoryBean with name 'salaryDao'.
+2019-05-14 15:27:31,127 DEBUG Creating MapperFactoryBean with name 'staffDao' and 'cn.bzu.personalmanage.dao.StaffDao' mapperInterface
+2019-05-14 15:27:31,127 DEBUG Enabling autowire by type for MapperFactoryBean with name 'staffDao'.
+2019-05-14 15:27:31,127 DEBUG Creating MapperFactoryBean with name 'stafftransferDao' and 'cn.bzu.personalmanage.dao.StafftransferDao' mapperInterface
+2019-05-14 15:27:31,127 DEBUG Enabling autowire by type for MapperFactoryBean with name 'stafftransferDao'.
+2019-05-14 15:27:31,127 DEBUG Loaded 49 bean definitions from class path resource [applicationcontext.xml]
+2019-05-14 15:27:31,127 DEBUG Bean factory for org.springframework.context.support.ClassPathXmlApplicationContext@36f0f1be: org.springframework.beans.factory.support.DefaultListableBeanFactory@68567e20: defining beans [adminController,departmentController,excelController,leaveOfficeController,positionController,salaryController,staffController,staffTransferController,statementController,admin,department,leaveOffice,staff,staffTransfer,station,adminService,departmentService,leaveOfficeService,positionService,salaryService,staffService,stafftransferService,checkCodeSet,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,jdbcTemplate,dataSourceTransactionManager,org.springframework.transaction.config.internalTransactionalEventListenerFactory,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,txAdvice,txPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,sqlSessionFactory,adminDao,departmentDao,leaveOfficeDao,positionDao,salaryDao,staffDao,stafftransferDao]; root of factory hierarchy
+2019-05-14 15:27:31,183 DEBUG Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2019-05-14 15:27:31,344 DEBUG Creating shared instance of singleton bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+2019-05-14 15:27:31,383 DEBUG Found key 'user' in PropertySource 'localProperties' with value of type String
+2019-05-14 15:27:31,383 DEBUG Found key 'password' in PropertySource 'localProperties' with value of type String
+2019-05-14 15:27:31,384 DEBUG Found key 'jdbcUrl' in PropertySource 'localProperties' with value of type String
+2019-05-14 15:27:31,384 DEBUG Found key 'driverClass' in PropertySource 'localProperties' with value of type String
+2019-05-14 15:27:31,388 DEBUG Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2019-05-14 15:27:31,407 DEBUG Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2019-05-14 15:27:31,415 DEBUG Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2019-05-14 15:27:31,426 DEBUG Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2019-05-14 15:27:31,456 DEBUG Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@431cd9b2]
+2019-05-14 15:27:31,459 DEBUG Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@68c9d179]
+2019-05-14 15:27:31,463 DEBUG Creating shared instance of singleton bean 'adminController'
+2019-05-14 15:27:31,467 DEBUG Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-14 15:27:31,474 DEBUG Creating shared instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+2019-05-14 15:27:31,474 DEBUG Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-14 15:27:31,474 DEBUG Creating shared instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+2019-05-14 15:27:31,496 DEBUG Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-14 15:27:31,496 DEBUG Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-14 15:27:31,600 DEBUG Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-05-14 15:27:31,610 DEBUG Creating shared instance of singleton bean 'adminService'
+2019-05-14 15:27:31,618 DEBUG Creating shared instance of singleton bean 'adminDao'
+2019-05-14 15:27:31,633 DEBUG Creating shared instance of singleton bean 'sqlSessionFactory'
+2019-05-14 15:27:31,639 DEBUG Creating shared instance of singleton bean 'dataSource'
+2019-05-14 15:27:31,660 INFO MLog clients using slf4j logging.
+2019-05-14 15:27:31,667 DEBUG Reading VM config for path list /com/mchange/v2/log/default-mchange-log.properties, /mchange-commons.properties, /c3p0.properties, hocon:/reference,/application,/c3p0,/, /mchange-log.properties, /
+2019-05-14 15:27:31,667 DEBUG The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2019-05-14 15:27:31,667 DEBUG The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2019-05-14 15:27:31,667 DEBUG The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2019-05-14 15:27:31,667 DEBUG The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2019-05-14 15:27:31,670 DEBUG The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2019-05-14 15:27:31,670 DEBUG The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2019-05-14 15:27:31,670 DEBUG The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2019-05-14 15:27:31,670 DEBUG The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2019-05-14 15:27:32,041 INFO Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2019-05-14 15:27:32,063 DEBUG MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hge77la21eacjvu1hlck6n|74589991,name=1hge77la21eacjvu1hlck6n|74589991 registered.
+2019-05-14 15:27:32,127 DEBUG MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hge77la21eacjvu1hlck6n|74589991,name=1hge77la21eacjvu1hlck6n|74589991 unregistered, in order to be reregistered after update.
+2019-05-14 15:27:32,129 DEBUG MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hge77la21eacjvu1hlck6n|74589991,name=1hge77la21eacjvu1hlck6n|74589991 registered.
+2019-05-14 15:27:32,356 DEBUG Parsed configuration file: 'class path resource [mybatis-config.xml]'
+2019-05-14 15:27:32,420 DEBUG Parsed mapper file: 'file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\AdminDao.xml]'
+2019-05-14 15:27:32,449 DEBUG Parsed mapper file: 'file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\DepartmentDao.xml]'
+2019-05-14 15:27:32,476 DEBUG Parsed mapper file: 'file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\LeaveOfficeDao.xml]'
+2019-05-14 15:27:32,488 DEBUG Parsed mapper file: 'file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\PositionDao.xml]'
+2019-05-14 15:27:32,500 DEBUG Parsed mapper file: 'file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\SalaryDao.xml]'
+2019-05-14 15:27:32,550 WARN Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminController': Unsatisfied dependency expressed through field 'adminService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminService': Unsatisfied dependency expressed through field 'adminDao'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminDao' defined in file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\AdminDao.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [applicationcontext.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\StaffDao.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\StaffDao.xml]'. Cause: java.lang.IllegalArgumentException: Result Maps collection already contains value for cn.bzu.personalmanage.dao.StaffDao.mapper_resultMap[staff-leave]_association[leaveOffice]
+2019-05-14 15:30:08,812 INFO Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@36f0f1be: startup date [Tue May 14 15:30:08 CST 2019]; root of context hierarchy
+2019-05-14 15:30:09,067 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\AdminController.class]
+2019-05-14 15:30:09,069 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\DepartmentController.class]
+2019-05-14 15:30:09,076 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\ExcelController.class]
+2019-05-14 15:30:09,079 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\LeaveOfficeController.class]
+2019-05-14 15:30:09,083 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\PositionController.class]
+2019-05-14 15:30:09,084 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\SalaryController.class]
+2019-05-14 15:30:09,088 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\StaffController.class]
+2019-05-14 15:30:09,091 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\StaffTransferController.class]
+2019-05-14 15:30:09,093 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\StatementController.class]
+2019-05-14 15:30:09,096 DEBUG Ignored because not a concrete top-level class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\AdminDao.class]
+2019-05-14 15:30:09,098 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\entity\Admin.class]
+2019-05-14 15:30:09,100 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\entity\Department.class]
+2019-05-14 15:30:09,100 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\entity\LeaveOffice.class]
+2019-05-14 15:30:09,104 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\entity\Staff.class]
+2019-05-14 15:30:09,106 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\entity\StaffTransfer.class]
+2019-05-14 15:30:09,107 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\entity\Station.class]
+2019-05-14 15:30:09,109 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\service\AdminServiceImpl.class]
+2019-05-14 15:30:09,111 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\service\DepartmentServiceImpl.class]
+2019-05-14 15:30:09,112 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\service\LeaveOfficeServiceImpl.class]
+2019-05-14 15:30:09,113 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\service\PositionServiceImpl.class]
+2019-05-14 15:30:09,114 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\service\SalaryServiceImpl.class]
+2019-05-14 15:30:09,115 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\service\StaffServiceImpl.class]
+2019-05-14 15:30:09,116 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\service\StafftransferServiceImpl.class]
+2019-05-14 15:30:09,117 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\utils\CheckCodeSet.class]
+2019-05-14 15:30:09,158 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\AdminDao.class]
+2019-05-14 15:30:09,158 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\DepartmentDao.class]
+2019-05-14 15:30:09,159 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\LeaveOfficeDao.class]
+2019-05-14 15:30:09,159 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\PositionDao.class]
+2019-05-14 15:30:09,159 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\SalaryDao.class]
+2019-05-14 15:30:09,160 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\StaffDao.class]
+2019-05-14 15:30:09,160 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\StafftransferDao.class]
+2019-05-14 15:30:09,161 DEBUG Creating MapperFactoryBean with name 'adminDao' and 'cn.bzu.personalmanage.dao.AdminDao' mapperInterface
+2019-05-14 15:30:09,164 DEBUG Enabling autowire by type for MapperFactoryBean with name 'adminDao'.
+2019-05-14 15:30:09,164 DEBUG Creating MapperFactoryBean with name 'departmentDao' and 'cn.bzu.personalmanage.dao.DepartmentDao' mapperInterface
+2019-05-14 15:30:09,165 DEBUG Enabling autowire by type for MapperFactoryBean with name 'departmentDao'.
+2019-05-14 15:30:09,165 DEBUG Creating MapperFactoryBean with name 'leaveOfficeDao' and 'cn.bzu.personalmanage.dao.LeaveOfficeDao' mapperInterface
+2019-05-14 15:30:09,165 DEBUG Enabling autowire by type for MapperFactoryBean with name 'leaveOfficeDao'.
+2019-05-14 15:30:09,165 DEBUG Creating MapperFactoryBean with name 'positionDao' and 'cn.bzu.personalmanage.dao.PositionDao' mapperInterface
+2019-05-14 15:30:09,165 DEBUG Enabling autowire by type for MapperFactoryBean with name 'positionDao'.
+2019-05-14 15:30:09,165 DEBUG Creating MapperFactoryBean with name 'salaryDao' and 'cn.bzu.personalmanage.dao.SalaryDao' mapperInterface
+2019-05-14 15:30:09,165 DEBUG Enabling autowire by type for MapperFactoryBean with name 'salaryDao'.
+2019-05-14 15:30:09,165 DEBUG Creating MapperFactoryBean with name 'staffDao' and 'cn.bzu.personalmanage.dao.StaffDao' mapperInterface
+2019-05-14 15:30:09,165 DEBUG Enabling autowire by type for MapperFactoryBean with name 'staffDao'.
+2019-05-14 15:30:09,165 DEBUG Creating MapperFactoryBean with name 'stafftransferDao' and 'cn.bzu.personalmanage.dao.StafftransferDao' mapperInterface
+2019-05-14 15:30:09,166 DEBUG Enabling autowire by type for MapperFactoryBean with name 'stafftransferDao'.
+2019-05-14 15:30:09,166 DEBUG Loaded 49 bean definitions from class path resource [applicationcontext.xml]
+2019-05-14 15:30:09,166 DEBUG Bean factory for org.springframework.context.support.ClassPathXmlApplicationContext@36f0f1be: org.springframework.beans.factory.support.DefaultListableBeanFactory@68567e20: defining beans [adminController,departmentController,excelController,leaveOfficeController,positionController,salaryController,staffController,staffTransferController,statementController,admin,department,leaveOffice,staff,staffTransfer,station,adminService,departmentService,leaveOfficeService,positionService,salaryService,staffService,stafftransferService,checkCodeSet,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,jdbcTemplate,dataSourceTransactionManager,org.springframework.transaction.config.internalTransactionalEventListenerFactory,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,txAdvice,txPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,sqlSessionFactory,adminDao,departmentDao,leaveOfficeDao,positionDao,salaryDao,staffDao,stafftransferDao]; root of factory hierarchy
+2019-05-14 15:30:09,208 DEBUG Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2019-05-14 15:30:09,331 DEBUG Creating shared instance of singleton bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+2019-05-14 15:30:09,373 DEBUG Found key 'user' in PropertySource 'localProperties' with value of type String
+2019-05-14 15:30:09,373 DEBUG Found key 'password' in PropertySource 'localProperties' with value of type String
+2019-05-14 15:30:09,374 DEBUG Found key 'jdbcUrl' in PropertySource 'localProperties' with value of type String
+2019-05-14 15:30:09,374 DEBUG Found key 'driverClass' in PropertySource 'localProperties' with value of type String
+2019-05-14 15:30:09,378 DEBUG Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2019-05-14 15:30:09,389 DEBUG Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2019-05-14 15:30:09,392 DEBUG Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2019-05-14 15:30:09,401 DEBUG Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2019-05-14 15:30:09,425 DEBUG Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@431cd9b2]
+2019-05-14 15:30:09,427 DEBUG Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@68c9d179]
+2019-05-14 15:30:09,429 DEBUG Creating shared instance of singleton bean 'adminController'
+2019-05-14 15:30:09,431 DEBUG Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-14 15:30:09,439 DEBUG Creating shared instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+2019-05-14 15:30:09,439 DEBUG Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-14 15:30:09,442 DEBUG Creating shared instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+2019-05-14 15:30:09,468 DEBUG Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-14 15:30:09,470 DEBUG Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-14 15:30:09,579 DEBUG Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-05-14 15:30:09,590 DEBUG Creating shared instance of singleton bean 'adminService'
+2019-05-14 15:30:09,595 DEBUG Creating shared instance of singleton bean 'adminDao'
+2019-05-14 15:30:09,612 DEBUG Creating shared instance of singleton bean 'sqlSessionFactory'
+2019-05-14 15:30:09,620 DEBUG Creating shared instance of singleton bean 'dataSource'
+2019-05-14 15:30:09,644 INFO MLog clients using slf4j logging.
+2019-05-14 15:30:09,648 DEBUG Reading VM config for path list /com/mchange/v2/log/default-mchange-log.properties, /mchange-commons.properties, /c3p0.properties, hocon:/reference,/application,/c3p0,/, /mchange-log.properties, /
+2019-05-14 15:30:09,649 DEBUG The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2019-05-14 15:30:09,649 DEBUG The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2019-05-14 15:30:09,649 DEBUG The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2019-05-14 15:30:09,649 DEBUG The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2019-05-14 15:30:09,652 DEBUG The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2019-05-14 15:30:09,652 DEBUG The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2019-05-14 15:30:09,652 DEBUG The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2019-05-14 15:30:09,653 DEBUG The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2019-05-14 15:30:09,970 INFO Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2019-05-14 15:30:09,988 DEBUG MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hge77la21eafxruody6jk|74589991,name=1hge77la21eafxruody6jk|74589991 registered.
+2019-05-14 15:30:10,046 DEBUG MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hge77la21eafxruody6jk|74589991,name=1hge77la21eafxruody6jk|74589991 unregistered, in order to be reregistered after update.
+2019-05-14 15:30:10,048 DEBUG MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hge77la21eafxruody6jk|74589991,name=1hge77la21eafxruody6jk|74589991 registered.
+2019-05-14 15:30:10,299 DEBUG Parsed configuration file: 'class path resource [mybatis-config.xml]'
+2019-05-14 15:30:10,356 DEBUG Parsed mapper file: 'file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\AdminDao.xml]'
+2019-05-14 15:30:10,383 DEBUG Parsed mapper file: 'file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\DepartmentDao.xml]'
+2019-05-14 15:30:10,398 DEBUG Parsed mapper file: 'file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\LeaveOfficeDao.xml]'
+2019-05-14 15:30:10,409 DEBUG Parsed mapper file: 'file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\PositionDao.xml]'
+2019-05-14 15:30:10,418 DEBUG Parsed mapper file: 'file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\SalaryDao.xml]'
+2019-05-14 15:30:10,443 WARN Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminController': Unsatisfied dependency expressed through field 'adminService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminService': Unsatisfied dependency expressed through field 'adminDao'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminDao' defined in file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\AdminDao.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [applicationcontext.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\StaffDao.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\StaffDao.xml]'. Cause: java.lang.IllegalArgumentException: Result Maps collection already contains value for cn.bzu.personalmanage.dao.StaffDao.mapper_resultMap[staff-leave]_association[leaveOffice]
+2019-05-14 15:30:59,505 INFO Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@36f0f1be: startup date [Tue May 14 15:30:59 CST 2019]; root of context hierarchy
+2019-05-14 15:30:59,782 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\AdminController.class]
+2019-05-14 15:30:59,784 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\DepartmentController.class]
+2019-05-14 15:30:59,793 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\ExcelController.class]
+2019-05-14 15:30:59,795 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\LeaveOfficeController.class]
+2019-05-14 15:30:59,798 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\PositionController.class]
+2019-05-14 15:30:59,800 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\SalaryController.class]
+2019-05-14 15:30:59,802 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\StaffController.class]
+2019-05-14 15:30:59,804 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\StaffTransferController.class]
+2019-05-14 15:30:59,808 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\StatementController.class]
+2019-05-14 15:30:59,809 DEBUG Ignored because not a concrete top-level class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\AdminDao.class]
+2019-05-14 15:30:59,812 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\entity\Admin.class]
+2019-05-14 15:30:59,813 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\entity\Department.class]
+2019-05-14 15:30:59,814 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\entity\LeaveOffice.class]
+2019-05-14 15:30:59,817 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\entity\Staff.class]
+2019-05-14 15:30:59,819 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\entity\StaffTransfer.class]
+2019-05-14 15:30:59,821 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\entity\Station.class]
+2019-05-14 15:30:59,825 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\service\AdminServiceImpl.class]
+2019-05-14 15:30:59,826 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\service\DepartmentServiceImpl.class]
+2019-05-14 15:30:59,828 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\service\LeaveOfficeServiceImpl.class]
+2019-05-14 15:30:59,829 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\service\PositionServiceImpl.class]
+2019-05-14 15:30:59,830 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\service\SalaryServiceImpl.class]
+2019-05-14 15:30:59,831 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\service\StaffServiceImpl.class]
+2019-05-14 15:30:59,831 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\service\StafftransferServiceImpl.class]
+2019-05-14 15:30:59,833 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\utils\CheckCodeSet.class]
+2019-05-14 15:30:59,875 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\AdminDao.class]
+2019-05-14 15:30:59,875 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\DepartmentDao.class]
+2019-05-14 15:30:59,876 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\LeaveOfficeDao.class]
+2019-05-14 15:30:59,876 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\PositionDao.class]
+2019-05-14 15:30:59,876 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\SalaryDao.class]
+2019-05-14 15:30:59,876 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\StaffDao.class]
+2019-05-14 15:30:59,876 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\StafftransferDao.class]
+2019-05-14 15:30:59,877 DEBUG Creating MapperFactoryBean with name 'adminDao' and 'cn.bzu.personalmanage.dao.AdminDao' mapperInterface
+2019-05-14 15:30:59,878 DEBUG Enabling autowire by type for MapperFactoryBean with name 'adminDao'.
+2019-05-14 15:30:59,879 DEBUG Creating MapperFactoryBean with name 'departmentDao' and 'cn.bzu.personalmanage.dao.DepartmentDao' mapperInterface
+2019-05-14 15:30:59,879 DEBUG Enabling autowire by type for MapperFactoryBean with name 'departmentDao'.
+2019-05-14 15:30:59,879 DEBUG Creating MapperFactoryBean with name 'leaveOfficeDao' and 'cn.bzu.personalmanage.dao.LeaveOfficeDao' mapperInterface
+2019-05-14 15:30:59,879 DEBUG Enabling autowire by type for MapperFactoryBean with name 'leaveOfficeDao'.
+2019-05-14 15:30:59,879 DEBUG Creating MapperFactoryBean with name 'positionDao' and 'cn.bzu.personalmanage.dao.PositionDao' mapperInterface
+2019-05-14 15:30:59,879 DEBUG Enabling autowire by type for MapperFactoryBean with name 'positionDao'.
+2019-05-14 15:30:59,879 DEBUG Creating MapperFactoryBean with name 'salaryDao' and 'cn.bzu.personalmanage.dao.SalaryDao' mapperInterface
+2019-05-14 15:30:59,879 DEBUG Enabling autowire by type for MapperFactoryBean with name 'salaryDao'.
+2019-05-14 15:30:59,879 DEBUG Creating MapperFactoryBean with name 'staffDao' and 'cn.bzu.personalmanage.dao.StaffDao' mapperInterface
+2019-05-14 15:30:59,879 DEBUG Enabling autowire by type for MapperFactoryBean with name 'staffDao'.
+2019-05-14 15:30:59,879 DEBUG Creating MapperFactoryBean with name 'stafftransferDao' and 'cn.bzu.personalmanage.dao.StafftransferDao' mapperInterface
+2019-05-14 15:30:59,880 DEBUG Enabling autowire by type for MapperFactoryBean with name 'stafftransferDao'.
+2019-05-14 15:30:59,880 DEBUG Loaded 49 bean definitions from class path resource [applicationcontext.xml]
+2019-05-14 15:30:59,880 DEBUG Bean factory for org.springframework.context.support.ClassPathXmlApplicationContext@36f0f1be: org.springframework.beans.factory.support.DefaultListableBeanFactory@68567e20: defining beans [adminController,departmentController,excelController,leaveOfficeController,positionController,salaryController,staffController,staffTransferController,statementController,admin,department,leaveOffice,staff,staffTransfer,station,adminService,departmentService,leaveOfficeService,positionService,salaryService,staffService,stafftransferService,checkCodeSet,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,jdbcTemplate,dataSourceTransactionManager,org.springframework.transaction.config.internalTransactionalEventListenerFactory,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,txAdvice,txPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,sqlSessionFactory,adminDao,departmentDao,leaveOfficeDao,positionDao,salaryDao,staffDao,stafftransferDao]; root of factory hierarchy
+2019-05-14 15:30:59,934 DEBUG Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2019-05-14 15:31:00,079 DEBUG Creating shared instance of singleton bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+2019-05-14 15:31:00,142 DEBUG Found key 'user' in PropertySource 'localProperties' with value of type String
+2019-05-14 15:31:00,143 DEBUG Found key 'password' in PropertySource 'localProperties' with value of type String
+2019-05-14 15:31:00,143 DEBUG Found key 'jdbcUrl' in PropertySource 'localProperties' with value of type String
+2019-05-14 15:31:00,143 DEBUG Found key 'driverClass' in PropertySource 'localProperties' with value of type String
+2019-05-14 15:31:00,147 DEBUG Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2019-05-14 15:31:00,160 DEBUG Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2019-05-14 15:31:00,163 DEBUG Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2019-05-14 15:31:00,180 DEBUG Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2019-05-14 15:31:00,220 DEBUG Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@431cd9b2]
+2019-05-14 15:31:00,223 DEBUG Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@68c9d179]
+2019-05-14 15:31:00,224 DEBUG Creating shared instance of singleton bean 'adminController'
+2019-05-14 15:31:00,225 DEBUG Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-14 15:31:00,234 DEBUG Creating shared instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+2019-05-14 15:31:00,235 DEBUG Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-14 15:31:00,235 DEBUG Creating shared instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+2019-05-14 15:31:00,262 DEBUG Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-14 15:31:00,262 DEBUG Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-14 15:31:00,365 DEBUG Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-05-14 15:31:00,375 DEBUG Creating shared instance of singleton bean 'adminService'
+2019-05-14 15:31:00,378 DEBUG Creating shared instance of singleton bean 'adminDao'
+2019-05-14 15:31:00,390 DEBUG Creating shared instance of singleton bean 'sqlSessionFactory'
+2019-05-14 15:31:00,398 DEBUG Creating shared instance of singleton bean 'dataSource'
+2019-05-14 15:31:00,415 INFO MLog clients using slf4j logging.
+2019-05-14 15:31:00,421 DEBUG Reading VM config for path list /com/mchange/v2/log/default-mchange-log.properties, /mchange-commons.properties, /c3p0.properties, hocon:/reference,/application,/c3p0,/, /mchange-log.properties, /
+2019-05-14 15:31:00,421 DEBUG The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2019-05-14 15:31:00,421 DEBUG The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2019-05-14 15:31:00,421 DEBUG The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2019-05-14 15:31:00,422 DEBUG The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2019-05-14 15:31:00,423 DEBUG The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2019-05-14 15:31:00,424 DEBUG The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2019-05-14 15:31:00,424 DEBUG The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2019-05-14 15:31:00,424 DEBUG The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2019-05-14 15:31:00,750 INFO Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2019-05-14 15:31:00,768 DEBUG MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hge77la21eah0y511r4wjs|74589991,name=1hge77la21eah0y511r4wjs|74589991 registered.
+2019-05-14 15:31:00,825 DEBUG MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hge77la21eah0y511r4wjs|74589991,name=1hge77la21eah0y511r4wjs|74589991 unregistered, in order to be reregistered after update.
+2019-05-14 15:31:00,826 DEBUG MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hge77la21eah0y511r4wjs|74589991,name=1hge77la21eah0y511r4wjs|74589991 registered.
+2019-05-14 15:31:01,051 DEBUG Parsed configuration file: 'class path resource [mybatis-config.xml]'
+2019-05-14 15:31:01,104 DEBUG Parsed mapper file: 'file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\AdminDao.xml]'
+2019-05-14 15:31:01,134 DEBUG Parsed mapper file: 'file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\DepartmentDao.xml]'
+2019-05-14 15:31:01,149 DEBUG Parsed mapper file: 'file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\LeaveOfficeDao.xml]'
+2019-05-14 15:31:01,160 DEBUG Parsed mapper file: 'file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\PositionDao.xml]'
+2019-05-14 15:31:01,173 DEBUG Parsed mapper file: 'file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\SalaryDao.xml]'
+2019-05-14 15:31:01,200 WARN Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminController': Unsatisfied dependency expressed through field 'adminService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminService': Unsatisfied dependency expressed through field 'adminDao'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminDao' defined in file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\AdminDao.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [applicationcontext.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\StaffDao.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\StaffDao.xml]'. Cause: java.lang.IllegalArgumentException: Result Maps collection already contains value for cn.bzu.personalmanage.dao.StaffDao.mapper_resultMap[staff-leave]_association[leaveOffice]
+2019-05-14 16:02:03,563 INFO Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@36f0f1be: startup date [Tue May 14 16:02:03 CST 2019]; root of context hierarchy
+2019-05-14 16:02:03,823 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\AdminController.class]
+2019-05-14 16:02:03,826 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\DepartmentController.class]
+2019-05-14 16:02:03,832 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\ExcelController.class]
+2019-05-14 16:02:03,837 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\LeaveOfficeController.class]
+2019-05-14 16:02:03,839 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\PositionController.class]
+2019-05-14 16:02:03,841 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\SalaryController.class]
+2019-05-14 16:02:03,843 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\StaffController.class]
+2019-05-14 16:02:03,844 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\StaffTransferController.class]
+2019-05-14 16:02:03,847 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\controller\StatementController.class]
+2019-05-14 16:02:03,849 DEBUG Ignored because not a concrete top-level class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\AdminDao.class]
+2019-05-14 16:02:03,854 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\entity\Admin.class]
+2019-05-14 16:02:03,855 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\entity\Department.class]
+2019-05-14 16:02:03,856 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\entity\LeaveOffice.class]
+2019-05-14 16:02:03,858 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\entity\Staff.class]
+2019-05-14 16:02:03,861 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\entity\StaffTransfer.class]
+2019-05-14 16:02:03,863 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\entity\Station.class]
+2019-05-14 16:02:03,865 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\service\AdminServiceImpl.class]
+2019-05-14 16:02:03,867 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\service\DepartmentServiceImpl.class]
+2019-05-14 16:02:03,870 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\service\LeaveOfficeServiceImpl.class]
+2019-05-14 16:02:03,871 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\service\PositionServiceImpl.class]
+2019-05-14 16:02:03,872 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\service\SalaryServiceImpl.class]
+2019-05-14 16:02:03,874 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\service\StaffServiceImpl.class]
+2019-05-14 16:02:03,875 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\service\StafftransferServiceImpl.class]
+2019-05-14 16:02:03,877 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\utils\CheckCodeSet.class]
+2019-05-14 16:02:03,924 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\AdminDao.class]
+2019-05-14 16:02:03,925 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\DepartmentDao.class]
+2019-05-14 16:02:03,925 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\LeaveOfficeDao.class]
+2019-05-14 16:02:03,925 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\PositionDao.class]
+2019-05-14 16:02:03,925 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\SalaryDao.class]
+2019-05-14 16:02:03,926 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\StaffDao.class]
+2019-05-14 16:02:03,926 DEBUG Identified candidate component class: file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\StafftransferDao.class]
+2019-05-14 16:02:03,926 DEBUG Creating MapperFactoryBean with name 'adminDao' and 'cn.bzu.personalmanage.dao.AdminDao' mapperInterface
+2019-05-14 16:02:03,930 DEBUG Enabling autowire by type for MapperFactoryBean with name 'adminDao'.
+2019-05-14 16:02:03,930 DEBUG Creating MapperFactoryBean with name 'departmentDao' and 'cn.bzu.personalmanage.dao.DepartmentDao' mapperInterface
+2019-05-14 16:02:03,930 DEBUG Enabling autowire by type for MapperFactoryBean with name 'departmentDao'.
+2019-05-14 16:02:03,931 DEBUG Creating MapperFactoryBean with name 'leaveOfficeDao' and 'cn.bzu.personalmanage.dao.LeaveOfficeDao' mapperInterface
+2019-05-14 16:02:03,931 DEBUG Enabling autowire by type for MapperFactoryBean with name 'leaveOfficeDao'.
+2019-05-14 16:02:03,931 DEBUG Creating MapperFactoryBean with name 'positionDao' and 'cn.bzu.personalmanage.dao.PositionDao' mapperInterface
+2019-05-14 16:02:03,931 DEBUG Enabling autowire by type for MapperFactoryBean with name 'positionDao'.
+2019-05-14 16:02:03,931 DEBUG Creating MapperFactoryBean with name 'salaryDao' and 'cn.bzu.personalmanage.dao.SalaryDao' mapperInterface
+2019-05-14 16:02:03,931 DEBUG Enabling autowire by type for MapperFactoryBean with name 'salaryDao'.
+2019-05-14 16:02:03,931 DEBUG Creating MapperFactoryBean with name 'staffDao' and 'cn.bzu.personalmanage.dao.StaffDao' mapperInterface
+2019-05-14 16:02:03,932 DEBUG Enabling autowire by type for MapperFactoryBean with name 'staffDao'.
+2019-05-14 16:02:03,932 DEBUG Creating MapperFactoryBean with name 'stafftransferDao' and 'cn.bzu.personalmanage.dao.StafftransferDao' mapperInterface
+2019-05-14 16:02:03,932 DEBUG Enabling autowire by type for MapperFactoryBean with name 'stafftransferDao'.
+2019-05-14 16:02:03,932 DEBUG Loaded 49 bean definitions from class path resource [applicationcontext.xml]
+2019-05-14 16:02:03,932 DEBUG Bean factory for org.springframework.context.support.ClassPathXmlApplicationContext@36f0f1be: org.springframework.beans.factory.support.DefaultListableBeanFactory@17a7f733: defining beans [adminController,departmentController,excelController,leaveOfficeController,positionController,salaryController,staffController,staffTransferController,statementController,admin,department,leaveOffice,staff,staffTransfer,station,adminService,departmentService,leaveOfficeService,positionService,salaryService,staffService,stafftransferService,checkCodeSet,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,jdbcTemplate,dataSourceTransactionManager,org.springframework.transaction.config.internalTransactionalEventListenerFactory,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,txAdvice,txPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,sqlSessionFactory,adminDao,departmentDao,leaveOfficeDao,positionDao,salaryDao,staffDao,stafftransferDao]; root of factory hierarchy
+2019-05-14 16:02:04,020 DEBUG Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2019-05-14 16:02:04,198 DEBUG Creating shared instance of singleton bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+2019-05-14 16:02:04,255 DEBUG Found key 'user' in PropertySource 'localProperties' with value of type String
+2019-05-14 16:02:04,255 DEBUG Found key 'password' in PropertySource 'localProperties' with value of type String
+2019-05-14 16:02:04,255 DEBUG Found key 'jdbcUrl' in PropertySource 'localProperties' with value of type String
+2019-05-14 16:02:04,256 DEBUG Found key 'driverClass' in PropertySource 'localProperties' with value of type String
+2019-05-14 16:02:04,263 DEBUG Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2019-05-14 16:02:04,287 DEBUG Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2019-05-14 16:02:04,297 DEBUG Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2019-05-14 16:02:04,324 DEBUG Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2019-05-14 16:02:04,390 DEBUG Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@72c8e7b]
+2019-05-14 16:02:04,402 DEBUG Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@4b8d604b]
+2019-05-14 16:02:04,409 DEBUG Creating shared instance of singleton bean 'adminController'
+2019-05-14 16:02:04,411 DEBUG Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-14 16:02:04,425 DEBUG Creating shared instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+2019-05-14 16:02:04,426 DEBUG Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-14 16:02:04,426 DEBUG Creating shared instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+2019-05-14 16:02:04,457 DEBUG Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-14 16:02:04,458 DEBUG Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-14 16:02:04,584 DEBUG Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-05-14 16:02:04,595 DEBUG Creating shared instance of singleton bean 'adminService'
+2019-05-14 16:02:04,600 DEBUG Creating shared instance of singleton bean 'adminDao'
+2019-05-14 16:02:04,612 DEBUG Creating shared instance of singleton bean 'sqlSessionFactory'
+2019-05-14 16:02:04,624 DEBUG Creating shared instance of singleton bean 'dataSource'
+2019-05-14 16:02:04,654 INFO MLog clients using slf4j logging.
+2019-05-14 16:02:04,659 DEBUG Reading VM config for path list /com/mchange/v2/log/default-mchange-log.properties, /mchange-commons.properties, /c3p0.properties, hocon:/reference,/application,/c3p0,/, /mchange-log.properties, /
+2019-05-14 16:02:04,661 DEBUG The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2019-05-14 16:02:04,664 DEBUG The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2019-05-14 16:02:04,665 DEBUG The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2019-05-14 16:02:04,665 DEBUG The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2019-05-14 16:02:04,665 DEBUG The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2019-05-14 16:02:04,665 DEBUG The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2019-05-14 16:02:04,665 DEBUG The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2019-05-14 16:02:04,666 DEBUG The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2019-05-14 16:02:05,009 INFO Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2019-05-14 16:02:05,029 DEBUG MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hge77la21ebkzf9dmjiu7|3daf7722,name=1hge77la21ebkzf9dmjiu7|3daf7722 registered.
+2019-05-14 16:02:05,079 DEBUG MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hge77la21ebkzf9dmjiu7|3daf7722,name=1hge77la21ebkzf9dmjiu7|3daf7722 unregistered, in order to be reregistered after update.
+2019-05-14 16:02:05,080 DEBUG MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hge77la21ebkzf9dmjiu7|3daf7722,name=1hge77la21ebkzf9dmjiu7|3daf7722 registered.
+2019-05-14 16:02:05,306 DEBUG Parsed configuration file: 'class path resource [mybatis-config.xml]'
+2019-05-14 16:02:05,369 DEBUG Parsed mapper file: 'file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\AdminDao.xml]'
+2019-05-14 16:02:05,397 DEBUG Parsed mapper file: 'file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\DepartmentDao.xml]'
+2019-05-14 16:02:05,426 DEBUG Parsed mapper file: 'file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\LeaveOfficeDao.xml]'
+2019-05-14 16:02:05,439 DEBUG Parsed mapper file: 'file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\PositionDao.xml]'
+2019-05-14 16:02:05,451 DEBUG Parsed mapper file: 'file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\SalaryDao.xml]'
+2019-05-14 16:02:05,510 DEBUG Parsed mapper file: 'file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\StaffDao.xml]'
+2019-05-14 16:02:05,526 DEBUG Parsed mapper file: 'file [G:\xinEp_work\personalmanage\target\classes\cn\bzu\personalmanage\dao\StafftransferDao.xml]'
+2019-05-14 16:02:05,585 DEBUG Creating shared instance of singleton bean 'txAdvice'
+2019-05-14 16:02:05,594 DEBUG Creating shared instance of singleton bean 'dataSourceTransactionManager'
+2019-05-14 16:02:05,628 DEBUG Adding transactional method [get*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly]
+2019-05-14 16:02:05,628 DEBUG Adding transactional method [load*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly]
+2019-05-14 16:02:05,628 DEBUG Adding transactional method [find*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly]
+2019-05-14 16:02:05,629 DEBUG Adding transactional method [select*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly]
+2019-05-14 16:02:05,629 DEBUG Adding transactional method [*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT]
+2019-05-14 16:02:05,643 DEBUG Creating implicit proxy for bean 'adminService' with 0 common interceptors and 2 specific interceptors
+2019-05-14 16:02:05,645 DEBUG Creating JDK dynamic proxy: target source is SingletonTargetSource for target object [cn.bzu.personalmanage.service.AdminServiceImpl@75ed9710]
+2019-05-14 16:02:05,653 DEBUG Creating shared instance of singleton bean 'departmentController'
+2019-05-14 16:02:05,656 DEBUG Creating shared instance of singleton bean 'departmentService'
+2019-05-14 16:02:05,660 DEBUG Creating shared instance of singleton bean 'departmentDao'
+2019-05-14 16:02:05,666 DEBUG Creating implicit proxy for bean 'departmentService' with 0 common interceptors and 2 specific interceptors
+2019-05-14 16:02:05,668 DEBUG Creating JDK dynamic proxy: target source is SingletonTargetSource for target object [cn.bzu.personalmanage.service.DepartmentServiceImpl@749c877b]
+2019-05-14 16:02:05,672 DEBUG Creating shared instance of singleton bean 'excelController'
+2019-05-14 16:02:05,676 DEBUG Creating shared instance of singleton bean 'staffDao'
+2019-05-14 16:02:05,684 DEBUG Creating shared instance of singleton bean 'leaveOfficeController'
+2019-05-14 16:02:05,703 DEBUG Creating shared instance of singleton bean 'leaveOfficeService'
+2019-05-14 16:02:05,707 DEBUG Creating shared instance of singleton bean 'leaveOfficeDao'
+2019-05-14 16:02:05,710 DEBUG Creating implicit proxy for bean 'leaveOfficeService' with 0 common interceptors and 2 specific interceptors
+2019-05-14 16:02:05,710 DEBUG Creating JDK dynamic proxy: target source is SingletonTargetSource for target object [cn.bzu.personalmanage.service.LeaveOfficeServiceImpl@13c3c1e1]
+2019-05-14 16:02:05,716 DEBUG Creating shared instance of singleton bean 'staffController'
+2019-05-14 16:02:05,720 DEBUG Creating shared instance of singleton bean 'staffService'
+2019-05-14 16:02:05,726 DEBUG Creating implicit proxy for bean 'staffService' with 0 common interceptors and 2 specific interceptors
+2019-05-14 16:02:05,727 DEBUG Creating JDK dynamic proxy: target source is SingletonTargetSource for target object [cn.bzu.personalmanage.service.StaffServiceImpl@295eaa7c]
+2019-05-14 16:02:05,731 DEBUG Creating shared instance of singleton bean 'positionController'
+2019-05-14 16:02:05,736 DEBUG Creating shared instance of singleton bean 'positionService'
+2019-05-14 16:02:05,742 DEBUG Creating shared instance of singleton bean 'positionDao'
+2019-05-14 16:02:05,746 DEBUG Creating implicit proxy for bean 'positionService' with 0 common interceptors and 2 specific interceptors
+2019-05-14 16:02:05,748 DEBUG Creating JDK dynamic proxy: target source is SingletonTargetSource for target object [cn.bzu.personalmanage.service.PositionServiceImpl@6111ba37]
+2019-05-14 16:02:05,762 DEBUG Creating shared instance of singleton bean 'salaryController'
+2019-05-14 16:02:05,765 DEBUG Creating shared instance of singleton bean 'salaryService'
+2019-05-14 16:02:05,770 DEBUG Creating shared instance of singleton bean 'salaryDao'
+2019-05-14 16:02:05,776 DEBUG Creating implicit proxy for bean 'salaryService' with 0 common interceptors and 2 specific interceptors
+2019-05-14 16:02:05,778 DEBUG Creating JDK dynamic proxy: target source is SingletonTargetSource for target object [cn.bzu.personalmanage.service.SalaryServiceImpl@4721d212]
+2019-05-14 16:02:05,786 DEBUG Creating shared instance of singleton bean 'staffTransferController'
+2019-05-14 16:02:05,791 DEBUG Creating shared instance of singleton bean 'stafftransferService'
+2019-05-14 16:02:05,798 DEBUG Creating shared instance of singleton bean 'stafftransferDao'
+2019-05-14 16:02:05,802 DEBUG Creating implicit proxy for bean 'stafftransferService' with 0 common interceptors and 2 specific interceptors
+2019-05-14 16:02:05,804 DEBUG Creating JDK dynamic proxy: target source is SingletonTargetSource for target object [cn.bzu.personalmanage.service.StafftransferServiceImpl@654d8173]
+2019-05-14 16:02:05,810 DEBUG Creating shared instance of singleton bean 'statementController'
+2019-05-14 16:02:05,823 DEBUG Creating shared instance of singleton bean 'admin'
+2019-05-14 16:02:05,826 DEBUG Creating shared instance of singleton bean 'department'
+2019-05-14 16:02:05,835 DEBUG Creating shared instance of singleton bean 'leaveOffice'
+2019-05-14 16:02:05,840 DEBUG Creating shared instance of singleton bean 'staff'
+2019-05-14 16:02:05,846 DEBUG Creating shared instance of singleton bean 'staffTransfer'
+2019-05-14 16:02:05,849 DEBUG Creating shared instance of singleton bean 'station'
+2019-05-14 16:02:05,857 DEBUG Creating shared instance of singleton bean 'checkCodeSet'
+2019-05-14 16:02:05,861 DEBUG Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2019-05-14 16:02:05,870 DEBUG Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2019-05-14 16:02:05,876 DEBUG Creating shared instance of singleton bean 'jdbcTemplate'
+2019-05-14 16:02:05,940 DEBUG Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+2019-05-14 16:02:05,943 DEBUG Creating shared instance of singleton bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+2019-05-14 16:02:05,965 DEBUG Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@1991f767]
+2019-05-14 16:02:05,982 DEBUG Creating a new SqlSession
+2019-05-14 16:02:05,998 DEBUG SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2a1edad4] was not registered for synchronization because synchronization is not active
+2019-05-14 16:02:06,009 DEBUG Fetching JDBC Connection from DataSource
+2019-05-14 16:02:06,032 INFO Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge77la21ebkzf9dmjiu7|3daf7722, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge77la21ebkzf9dmjiu7|3daf7722, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/management?Unicode=true&characterEncoding=UTF-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2019-05-14 16:02:06,049 DEBUG The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2019-05-14 16:02:06,049 DEBUG The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2019-05-14 16:02:06,049 DEBUG The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2019-05-14 16:02:06,049 DEBUG The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2019-05-14 16:02:06,051 DEBUG com.mchange.v2.resourcepool.BasicResourcePool@33352f32 config: [start -> 3; min -> 3; max -> 15; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 0; max_resource_age -> 0; max_idle_time -> 0; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 0; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false; force_synchronous_checkins -> false]
+2019-05-14 16:02:06,051 DEBUG Created new pool for auth, username (masked): 'ro******'.
+2019-05-14 16:02:06,051 DEBUG acquire test -- pool size: 0; target_pool_size: 3; desired target? 1
+2019-05-14 16:02:06,051 DEBUG awaitAvailable(): [unknown]
+2019-05-14 16:02:06,315 DEBUG JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@3624da92 [wrapping: com.mysql.jdbc.JDBC4Connection@35fe2125]] will not be managed by Spring
+2019-05-14 16:02:06,320 DEBUG ==>  Preparing: select * from staff s ,salary y,department d,station p,leaveoffice l where s.salaryId = y.id and s.departmentId = d.id and s.stationId = p.id and s.enterTimeId = l.id and s.name = ? 
+2019-05-14 16:02:06,349 DEBUG ==> Parameters: ½ªºã(String)
+2019-05-14 16:02:06,375 DEBUG <==      Total: 1
+2019-05-14 16:02:06,383 DEBUG Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2a1edad4]
+2019-05-14 16:02:06,385 DEBUG com.mchange.v2.c3p0.impl.NewProxyConnection@3624da92 [wrapping: com.mysql.jdbc.JDBC4Connection@35fe2125]: close() called more than once.

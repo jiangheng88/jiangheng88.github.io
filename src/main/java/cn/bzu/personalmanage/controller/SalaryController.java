@@ -20,7 +20,7 @@ import cn.bzu.personalmanage.entity.StaffTransfer;
 import cn.bzu.personalmanage.service.SalaryService;
 
 @Controller
-@SessionAttributes(types = {ArrayList.class})
+
 public class SalaryController {
 	@Autowired
 	private SalaryService salaryService;

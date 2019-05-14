@@ -20,7 +20,7 @@ import cn.bzu.personalmanage.service.LeaveOfficeService;
 import cn.bzu.personalmanage.service.PositionService;
 
 @Controller
-@SessionAttributes(types = {ArrayList.class,Integer.class})
+
 public class LeaveOfficeController {
 	@Autowired
 	private LeaveOfficeService leaveOfficeService;

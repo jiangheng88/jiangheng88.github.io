@@ -62,7 +62,7 @@ input {
 						style="width: 200px; text-align: left; height: 30px"
 						name="stationId">
 							<option value="">请选择你要添加的岗位</option>
-							<c:forEach items="${sessionScope.position}" var="position">
+							<c:forEach items="${requestScope.position}" var="position">
 								<option value="${position.id}">${position.id}&nbsp;&nbsp;${position.stationName}</option>
 							</c:forEach>
 					</select></td>
@@ -73,7 +73,7 @@ input {
 						style="width: 200px; text-align: left; height: 30px"
 						name="departmentId">
 							<option value="">请选择你要添加的部门</option>
-							<c:forEach items="${sessionScope.departments}" var="departments">
+							<c:forEach items="${requestScope.departments}" var="departments">
 								<option value="${departments.id}">${departments.id}&nbsp;&nbsp;${departments.dpname}</option>
 							</c:forEach>
 
@@ -98,7 +98,7 @@ input {
 						style="width: 200px; text-align: left; height: 30px"
 						name="salaryId">
 							<option value="">请选择你要添加的薪水</option>
-							<c:forEach items="${sessionScope.salary}" var="salary">
+							<c:forEach items="${requestScope.salary}" var="salary">
 								<option value="${salary.id}">${salary.id}&nbsp;&nbsp;${salary.sum}</option>
 							</c:forEach>
 
@@ -110,7 +110,7 @@ input {
 						style="width: 200px; text-align: left; height: 30px"
 						name="enterTimeId">
 							<option value="">请选择你要添加的入职时间</option>
-							<c:forEach items="${sessionScope.newLeave}" var="newLeave">
+							<c:forEach items="${requestScope.newLeave}" var="newLeave">
 								<option value="${newLeave.id}">${newLeave.id}&nbsp;&nbsp;<fmt:formatDate
 										value="${newLeave.enterdate}" pattern="yyyy-MM-dd" /></option>
 							</c:forEach>

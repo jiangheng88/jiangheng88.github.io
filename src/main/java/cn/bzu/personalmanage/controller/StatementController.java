@@ -13,7 +13,7 @@ import cn.bzu.personalmanage.entity.Staff;
 import cn.bzu.personalmanage.service.StaffService;
 
 @Controller
-@SessionAttributes(types = {ArrayList.class})
+
 public class StatementController {
 	@Autowired
 	private StaffService staffService;

@@ -18,7 +18,7 @@ import cn.bzu.personalmanage.entity.Department;
 import cn.bzu.personalmanage.entity.Station;
 import cn.bzu.personalmanage.service.PositionService;
 
-@SessionAttributes(types = {ArrayList.class})
+
 @Controller
 public class PositionController {
 
@@ -44,10 +44,10 @@ public class PositionController {
 	@RequestMapping("/doPosition")
 	public String position(Model model, @RequestParam(required = false, defaultValue = "1", value = "pn") Integer pn) {
 		List<Station> list = new ArrayList<>();
-		Page<Station> page = PageHelper.startPage(pn, 15);
+		Page<Station> page = PageHelper.startPage(pn, 10);
 		list = positionService.getList();
 
-		PageInfo<Station> info = new PageInfo<>(list, 15);
+		PageInfo<Station> info = new PageInfo<>(list, 10);
 
 		model.addAttribute("pageInfo", info);
 		return "position";

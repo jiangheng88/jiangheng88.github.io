@@ -18,7 +18,7 @@ import cn.bzu.personalmanage.entity.Department;
 import cn.bzu.personalmanage.entity.Staff;
 import cn.bzu.personalmanage.service.DepartmentService;
 @Controller
-@SessionAttributes(types = {ArrayList.class})
+
 public class DepartmentController {
 	@Autowired
 	private DepartmentService departmentservice;

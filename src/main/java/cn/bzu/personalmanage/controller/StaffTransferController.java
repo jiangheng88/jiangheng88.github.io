@@ -19,7 +19,7 @@ import cn.bzu.personalmanage.entity.Station;
 import cn.bzu.personalmanage.service.StafftransferService;
 
 @Controller
-@SessionAttributes(types = {ArrayList.class})
+
 public class StaffTransferController {
 	@Autowired
 	private StafftransferService stafftransferService;

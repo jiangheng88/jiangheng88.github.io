@@ -70,7 +70,7 @@ input[type="date"]::-webkit-clear-button {
 						name="afterid">
 							<option value="${requestScope.staffTransfer.afterid}">
 								选择你修改的岗位 ${requestScope.staffTransfer.afterid}</option>
-							<c:forEach items="${sessionScope.position}" var="position">
+							<c:forEach items="${requestScope.position}" var="position">
 								<option value="${position.id}">${position.id}&nbsp;&nbsp;${position.stationName}</option>
 							</c:forEach>
 					</select></td>

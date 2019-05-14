@@ -60,5 +60,12 @@ public class StaffServiceImpl implements StaffService{
 		return staffDao.getOnJob();
 	}
 
+	@Override
+	public List<Staff> getListByName(String name) {
+		// TODO Auto-generated method stub
+		return staffDao.getListByName(name);
+	}
+
+	
 	
 }

@@ -57,7 +57,7 @@ input {
 						name="dpname">
 							<option value="${requestScope.department.dpname}">
 								选择你修改的部门  ${requestScope.department.dpname}</option>
-							<c:forEach items="${sessionScope.departments}" var="departments">
+							<c:forEach items="${requestScope.departments}" var="departments">
 								<option value="${departments.dpname}">${departments.dpname}</option>
 							</c:forEach>
 

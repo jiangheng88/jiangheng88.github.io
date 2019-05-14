@@ -67,7 +67,7 @@ a {
 						style="width: 200px; text-align: left; height: 30px"
 						name="afterid">
 							<option value="">请选择你要添加的姓名</option>
-							<c:forEach items="${sessionScope.staffs}" var="staffs">
+							<c:forEach items="${requestScope.staffs}" var="staffs">
 								<option value="${staffs.name}">${staffs.id}&nbsp;&nbsp;${staffs.name}</option>
 							</c:forEach>
 					</select></td>
@@ -79,7 +79,7 @@ a {
 						style="width: 200px; text-align: left; height: 30px"
 						name="afterid">
 							<option value="">请选择你要添加的岗位</option>
-							<c:forEach items="${sessionScope.position}" var="position">
+							<c:forEach items="${requestScope.position}" var="position">
 								<option value="${position.id}">${position.id}&nbsp;&nbsp;${position.stationName}</option>
 							</c:forEach>
 					</select></td>

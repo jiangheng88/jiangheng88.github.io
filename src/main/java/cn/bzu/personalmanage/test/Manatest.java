@@ -82,7 +82,7 @@ public class Manatest {
 		 * Map<Integer, String> map= departmentDao.getdpNameId();
 		 * System.out.println(map);
 		 */
-		System.out.println(l.getTime());
+		System.out.println(staffDao.getListByName("½ªºã"));
 		 
 	}
 

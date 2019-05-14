@@ -24,8 +24,14 @@ public interface StaffService {
 
 	// 模糊查询的方法
 	public List<Staff> getListByLike(@Param("name") String name);
-	//获得员工的人数
-		public int count();
-		
-		 public  List<Staff> getOnJob();
+
+	// 获得员工的人数
+	public int count();
+
+	public List<Staff> getOnJob();
+
+	/*
+	 * 通过名字查询
+	 */
+	public List<Staff> getListByName(String name);
 }

@@ -55,7 +55,7 @@ input {
 						name="stationName">
 							<option value=" ${requestScope.station.stationName}">
 								选择你修改的岗位 ${requestScope.station.stationName}</option>
-							<c:forEach items="${sessionScope.position}" var="position">
+							<c:forEach items="${requestScope.position}" var="position">
 								<option value="${position.stationName}">&nbsp;&nbsp;${position.stationName}</option>
 							</c:forEach>
 					</select>

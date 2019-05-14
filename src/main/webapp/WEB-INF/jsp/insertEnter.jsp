@@ -54,7 +54,7 @@ input[type="date"]::-webkit-clear-button{
 				<tr>
 					<td class="td1">员工id</td>
 					<td class="td2" style="text-align: left;">
-						<input name="staffId" type="text" value="${sessionScope.count+1}">
+						<input name="staffId" type="text" value="${requestScope.count+1}">
 					</td>
 				</tr>
 				<tr>

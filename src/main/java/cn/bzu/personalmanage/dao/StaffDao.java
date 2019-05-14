@@ -25,5 +25,9 @@ public interface StaffDao {
 	//获得员工的人数
 	public int count();
 	 public  List<Staff> getOnJob();
+	/*
+	 * 通过名字查询
+	 */
+	public List<Staff> getListByName(String name);
 	
 }
