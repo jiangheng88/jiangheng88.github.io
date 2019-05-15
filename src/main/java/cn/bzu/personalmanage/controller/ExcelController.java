@@ -87,8 +87,7 @@ public class ExcelController {
            for(int i=0;i<=13;i++){
                sheet.autoSizeColumn(i);
            }
-//            File file = new File("C:\\Users\\Shinelon\\Desktop\\ÂÒÆß°ËÔã\\javastudy\\excel.xls");
-//        FileOutputStream os = new FileOutputStream(file);
+           
          response.setContentType("application/vnd.ms-excel;charset=utf-8");
            OutputStream os = response.getOutputStream();
            wb.write(os);
